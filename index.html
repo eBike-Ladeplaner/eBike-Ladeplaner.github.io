@@ -1,0 +1,1597 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="eBike Laden">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAKa0lEQVR4AeydCWwUVRjH2xKQowUUWipEBVqOclgRREERDzRoCYhSSUERSvFGSDQeBQ0JFO8ExRivilq5PGKLQAkKSoKEgGgVyiVyNByliJxyGcGPLWyW3feGznb2e2/e+5PHMPu9N/O+///7MTO7s0dCo/wn0eCA0IGEOPyBAxIHAIfEGITj4gAHKJA6ADik1qADcIABqQOAQ2oNOgBHFAzYsgngsKXSUegEHFGYZssmgMOWSkehE3BEYZotmwAOWyodhU7AEYVptmwCOGypdBQ6PYUjivmxicYOAA6Ni6M6NcChugIazw84NC6O6tQAh+oKaDw/4NC4OKpTAxyqK6Dx/IBDdXE0nh9waFwc1akBDtUV0Hh+wKFxcVSnBjhUV0Dj+QGHxsVRnRrgUF0BjecHHBoXR3Vq+sKh2hnMj8/KggG5AzhyyL2xvgdwWI+A3ADAIffG+h7AYT0CcgMAh9wb63sAh1EIeCsGcHjrp1F7AxxGldNbMYDDWz+N2hvgMKqc3ooBHN76adTeAIdR5fRWDODw1k+j9mYJHEbVjE0M4GCz2n8TAQ7/1YwtY8DBZrX/JgIc/qsZW8aAg81q/00EOPxXM7aMAQeb1b6bCO8+91/J+DLGkYPPa9/NBDh8VzK+hAEHn9e+mwlw+K5kfAmrh+OWtPYF/e9Z/PD4dc9Mqpr05tGC6cY3kkliSfKU/oP6tGnHV22XMymDo05CQl7Pm7Y8P2V+7thxfW7vfVVa60ubNaxbz2X+vhxOMkksSR7fp19p3lObn5s8skdvMkQ3MWrg6JLacs34idMGDU1NaqKbIxfPx+sRLRs3fWdwzs/jJnRqcbnX+67V/hTAMbBT5g+PPp3eLLlWiRu3cbvmKT8++kxWRld9lHHD0b9D55nDRjew4/ThtswN69WbM3zMAG34YIWjc4uWRTm58fHxbl2zZ3x8fPyMoSMzUrQ4v/DBkRAfP2t4Ho4ZFwWdLPosZ9RFhzEM4INjdM+b0nCdUbOS0pGDnr/UbGwMRzHBkVjvkgn97nbQMbts9QOzCtu+nJ84YazxjWSSWJLsYMhLdwxoULeuwwCGLiY4BnbObN4wUahn75HDWYXTx3z5WXF5WdXRI8IxhgVJJoklyQNnvEPrQnUpiUn0tE7YxRb0Eg6HpG9snS7rHT7ro2VbN8t6zY4v3bJp1NxPZBp7tU6TdfHEmeDokNJCqOfj1T+trNgm7LIkSP8xitasFIrtkJwqjLMFmeCQvRJaUv4bm9QaTsR/JVhSXibMLTWpsTDOFmSCo1XjpkJJqzU7bGRf3f2RG24Wphq7YNnuncKdt7AEjrp16gj1Hz55QhhXErwtveNH2SN2HNzPPHvlkUPCGRtfUl8YZwsyHTnY9EQ90fVXtvnigYfp1uiOA39HvRPDNgQcZwvaMSW1eOTj9QOvK1Qc4D5ynM1Ay7+AI65Vk6alo59KOn8MZz5yaEnFuaRsh6N5o8RFeeOSE5PO+REXx3/NEZxatxWr4aAX9emY0eay5qFVqcA1x3k77IWDnkDRdUbGhW++OnTiOLXz5tj+r6VwnH3/wLC8G65qG1Z/HDZCDbEUjsLsEXd17BJqRPW6bhccdPvtwyEPbn1haug78ukhBamrOufYLW2EY0r/QdmZPYSe6vZU5dWs+3K69QzjgB5SkLqEEjwMWgfHY736ju/TT+agbi9y3Nm+kyxVhy7ZJm7j2sLhVkiNxg+5uvvrA4Y4DNXtyNGkfgNZtg5dsk3cxi2Cg26d0KWGs0G6XXM4ZxvrXlvgCN46cTYUz1ZC/bECjtBbJ6HiI9d3vfha6PMC5/X8253eFRu5c99FzIcj7NaJVxWaurR06pKFXu1Nz/0YDkfkrRNPymADGWSUyXAIb52Q5lo2S8ggl4yFQ3jrhATXsulNRi3FhW9uJhyyWyfh6l0+tooM8sZMOOj1DOGtExIcdbONDDLKQDgcbp2Q4OiahWSQUQbCMXFRSc0/bdtjWgG54NzsJIM8MRAOUlXzNrhrN+fB1pJBttgOx71dryUXZM1mMsgTq+FIa5ackSL9PKoOZDi8Z9Ghi+rqSbMDDolV90ve8kPDdSCD0li8eT0thc2hSzg+iqDVcMjOKZqQQeV8bsHXs39dFfYdHvSQgtRFA2La7IVDdk7RhwwqPHEw5quithd+4RE9pCB10YCYNnvhEJ5TtCIjpoWvyc7thSPynAIywoixFI7IcwrICCODHloKR9g5BWQQCpHNUjhCzykgIxKLs5E4K38AMPScAjKqORAubTxyBM8pIEPIRDDIBMc/p04FpwxdSQn5YozQeEzXq88p+pAh+2K4o6dOxtSHi+6cCY6qo4eFqWS2vEIYj12w+pyiDxmk9BqJCXuPiE2jTXgaGxzi760edV1vHp3BWeicohUZlNhjvfrSMrJVWgLHL7sqIsVTZGCnzL5t29MKW1u/d7dWnzfJyujar12GUP6anTuEcbYg05GjZJ34S3pJ58f3P3RrWgda4WklOn1n8m3pHaffkyMTPk91qkxwLN++ZUNVpdAFuhz7NvfJD7NHDOqcmdxI/MsKwg1VBWs/b6smTQd36UaS5416QnZJXr5398qKrbWfqzZ7YIKDUiz4fgEtZS3nmutmDsvblv+y88dTzejd9Ozkopxckixzg+KTv3OyiwYwND44isvLNlTtYZBkwBRr9+yav+F35UL44CCpuXM/Pf6v+AUP6kWrdoAscvgRluoxPEtWONZW7npozgweYT6d5cyZM2TRxn3i6zNmUaxwkLaFG9cN/fyDY5IXTGmAzY2OGdlF75NFmpjADQfJXrBh7a3vvbll/z5aRws68MdfVTe/+/qiTeXBiPIVBXCQZnqe1n3alHElcyslPzVCY+xpuw8fHFs8u8dbBbJn+6qs8BAOdxL+O326cNXy9FcmZhVOf3v50hU7/tx+YP8xOy5XSSaJJclvLV9C8tu/+uKM1SvIEHcOxn60MjiC0pZt3Zxf+s2dH0zr8saklElP1/xjrv4dSTJJLEmeUFpM8oNW6LaiHg7dHEE+QQcAR9AKrIQ7ADjCHcHjoAOAI2gFVsIdABzhjuBx0AHAEbRCyYrWkwIOrcujNjnAodZ/rWcHHFqXR21ygEOt/1rPDji0Lo/a5ACHWv+1nh1waF0etcnpCodaVzB7wAHAEbABC5EDgEPkCmIBBwBHwAYsRA4ADpEriAUcABwBG7AQOQA4RK4gFnAAcARsMGPhtQrA4bWjBu0PcBhUTK+lAA6vHTVof4DDoGJ6LQVweO2oQfsDHAYV02spgMNrRw3anxVwGFQvVimAg9Vuf00GOPxVL9ZsAQer3f6aDHD4q16s2QIOVrv9NRng8Fe9WLMFHKx2+2gyShVwkAloYgcAh9gXRMkBwEEmoIkdABxiXxAlBwAHmYAmdgBwiH1BlBwAHGQCmtgBwCH2RR61qAdwWFRst1IBh1vHLBoPOCwqtlupgMOtYxaNBxwWFdutVMDh1jGLxgMOi4rtVqp3cLidGeO1dwBwaF8idQkCDnXeaz8z4NC+ROoSBBzqvNd+ZsChfYnUJfg/AAAA//+ZLciRAAAABklEQVQDABUU4Bnwn5xDAAAAAElFTkSuQmCC">
+<title>eBike Ladeplaner</title>
+<style>
+/* Layout: eine schmale Spalte wie eine Handy-App. Oben Ergebnis-Anzeige mit Ladebalken, darunter Auswahl, unten die Schaltflächen für die Steckdose. */
+:root {
+  --bg: #eef1f3;
+  --surface: #ffffff;
+  --ink: #14212b;
+  --muted: #5c6b76;
+  --line: #d5dce1;
+  --accent: #0b7a6c;
+  --accent-ink: #ffffff;
+  --accent-soft: #d6efea;
+  --warn: #b4540a;
+  --danger: #b3261e;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f171d; --surface: #18232b; --ink: #e8eef2; --muted: #9aaab5; --line: #2b3a45;
+    --accent: #3fc7b0; --accent-ink: #072a24; --accent-soft: #17403a; --warn: #f0a15c; --danger: #f2877f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f171d; --surface: #18232b; --ink: #e8eef2; --muted: #9aaab5; --line: #2b3a45;
+  --accent: #3fc7b0; --accent-ink: #072a24; --accent-soft: #17403a; --warn: #f0a15c; --danger: #f2877f;
+  color-scheme: dark;
+}
+html { -webkit-text-size-adjust: 100%; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+[hidden] { display: none !important; }
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.45;
+  padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+.profpanel { border: 1px solid var(--accent); border-radius: 14px; padding: 14px 14px 16px; margin: 6px 0 14px; background: var(--surface); }
+.profpanel > h2 { margin-top: 0; }
+.profpanel section { margin-left: -4px; margin-right: -4px; }
+.ov { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.55); display: flex; align-items: flex-start; justify-content: center; padding: 16px; overflow: auto; }
+.ov[hidden] { display: none; }
+.dlg { width: 100%; max-width: 420px; margin-top: 8vh; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); }
+.dlg h2 { font-family: var(--font-body); font-size: 18px; letter-spacing: 0; text-transform: none; color: var(--ink); margin: 0 0 2px; font-weight: 700; }
+.dlg .ds { color: var(--warn); font-size: 14px; margin: 0 0 16px; }
+.dlg .num { display: block; width: 112px; margin: 0 auto; }
+.dlg .num input { text-align: center; padding-right: 26px; padding-left: 26px; }
+.dlg .num input { font-size: 22px; font-weight: 600; border: 2px solid var(--accent); }
+.dlg .num input { -moz-appearance: textfield; appearance: textfield; }
+.dlg .num input::-webkit-outer-spin-button, .dlg .num input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.dlg .num input:focus-visible { outline: none; }
+.dlg .brow .btn { font-weight: 700; }
+.dlg .cap { font-size: 14px; color: var(--muted); margin: 8px 2px 0; text-align: center; }
+.dlg .err { font-size: 14px; color: var(--danger); margin: 8px 2px 0; min-height: 0; }
+.dlg .brow { display: flex; gap: 16px; margin-top: 20px; }
+.dlg .brow .btn { flex: 1; min-height: 52px; }
+.dlg .brow .btn.go { flex: 1.3; }
+.dlg .sep { border-top: 1px solid var(--line); margin: 28px 0 20px; }
+.dlg .dsc { display: block; width: 100%; min-height: 52px; background: none; color: var(--danger); border: 1px solid var(--danger); }
+.dlg .dsc.armed { background: var(--danger); color: var(--accent-ink); }
+.todo { border: 1px solid var(--line); background: var(--surface); border-radius: 14px; overflow: hidden; margin: 0 0 14px; }
+.todo:not(:has(.trow:not([hidden]))) { display: none; }
+.todo .trow { display: flex; align-items: center; gap: 10px; padding: 10px 12px; color: var(--warn); font-size: 14px; line-height: 1.3; }
+.todo .trow[hidden] { display: none; }
+.todo .trow + .trow:not([hidden]) { border-top: 1px solid var(--line); }
+.todo .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); flex: none; }
+.todo .tx { flex: 1; min-width: 0; font-weight: 600; }
+.todo .tx small { display: block; font-weight: 400; font-size: 12.5px; opacity: 0.85; }
+.todo button { background: none; border: 0; color: var(--accent); font: inherit; font-size: 14px; font-weight: 700; padding: 8px 4px; min-height: 40px; cursor: pointer; flex: none; }
+.spin { display: inline-block; width: 13px; height: 13px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spn 0.9s linear infinite; vertical-align: -2px; margin-right: 8px; }
+@keyframes spn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spin { display: none; } }
+.langsel { display: flex; justify-content: center; align-items: center; gap: 4px; margin: 56px 0 24px; color: var(--muted); }
+.langsel button { background: none; border: 0; padding: 10px 16px; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer; border-radius: 8px; }
+.langsel button.on { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+header.top h1 { flex: none; white-space: nowrap; font-size: clamp(17px, 5.6vw, 26px); }
+#profSel { width: auto; flex: 1 1 0; min-width: 0; max-width: 52%; margin-left: auto; padding: 7px 8px; font-size: 14px; min-height: 36px; text-overflow: ellipsis; }
+h1 { font-family: var(--font-display); font-size: 26px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+.sub { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+h2 { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; font-weight: 600; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted); min-width: 0; }
+select, input[type="text"], input[type="number"] {
+  font: inherit; font-size: 16px; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; padding: 11px 12px; width: 100%; min-width: 0;
+}
+select:focus-visible, input:focus-visible, a.btn:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: end; }
+.num { position: relative; }
+.num input { padding-right: 44px; font-variant-numeric: tabular-nums; }
+.num span { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 14px; pointer-events: none; }
+.num.in { margin-top: 0; }
+.slider { display: flex; flex-direction: column; gap: 8px; }
+.slider .top { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; color: var(--muted); }
+.slider .top b { font-family: var(--font-display); font-size: 24px; color: var(--ink); font-variant-numeric: tabular-nums; }
+input[type="range"] { width: 100%; accent-color: var(--accent); height: 32px; margin: 0; }
+
+.result { gap: 16px; }
+.hero { display: flex; flex-direction: column; align-items: flex-start; text-align: left; gap: 6px; }
+.hero .time { font-family: var(--font-display); font-size: 44px; line-height: 1; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.hero .fin { color: var(--muted); font-size: 14px; }
+.gauge { position: relative; height: 22px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.gauge .have { position: absolute; top: 0; bottom: 0; left: 0; background: var(--line); }
+.gauge .add { position: absolute; top: 0; bottom: 0; background: var(--accent); }
+.gauge .m80 { position: absolute; top: 0; bottom: 0; left: 80%; width: 0; border-left: 2px dashed var(--muted); opacity: .7; }
+.scale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-top: 4px; }
+.btns { display: flex; flex-direction: column; gap: 12px; }
+.gauge .have, .gauge .add { transition: width .6s ease, left .6s ease; }
+.gauge .tgtl { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid var(--ink); }
+details#enDet > summary { font-size: 14px; }
+.stats.two { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 8px; }
+.dlabel { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+#resume { position: fixed; inset: 0; z-index: 99; background: rgba(0,0,0,.35); display: none; align-items: center; justify-content: center; color: #fff; font-size: 16px; font-weight: 600; touch-action: none; }
+#resume.on { display: flex; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.stats div { display: flex; flex-direction: column; gap: 2px; }
+.stats dt { font-size: 12px; color: var(--muted); }
+.stats dd { margin: 0; font-family: var(--font-display); font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+details.hint { font-size: 13px; }
+details.hint summary { font-size: 13px; padding: 2px 0; }
+details.hint[open] summary { margin-bottom: 6px; }
+details.hint .note { margin: 0 0 6px; }
+.msg { margin: 0; font-size: 14px; color: var(--warn); }
+
+.actions { gap: 12px; }
+a.btn, button.btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center; text-decoration: none;
+  font: inherit; font-weight: 600; font-size: 17px; border-radius: 12px; padding: 15px 16px; min-height: 52px; cursor: pointer; border: 1px solid transparent;
+}
+a.go, button.go { background: var(--accent); color: var(--accent-ink); }
+.btn.danger, button.danger { background: var(--danger); color: var(--accent-ink); border-color: var(--danger); }
+a.off { background: transparent; color: var(--danger); border-color: var(--danger); }
+label.filebtn { position: relative; display: flex; align-items: center; justify-content: center; box-sizing: border-box; width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: transparent; color: var(--ink); font-size: 15px; font-weight: 500; cursor: pointer; text-align: center; }
+label.filebtn input[type="file"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 0; }
+label.filebtn:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+a.ghost, button.ghost { background: transparent; color: var(--ink); border-color: var(--line); font-weight: 500; font-size: 15px; min-height: 44px; padding: 10px 14px; }
+a.btn[aria-disabled="true"] { opacity: .45; }
+.note { margin: 0; font-size: 13px; color: var(--muted); }
+.seg { border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label { display: block; text-align: center; padding: 11px 8px; font-size: 14px; color: var(--ink); background: var(--bg); cursor: pointer; }
+.seg input:checked + label { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.seg input:focus-visible + label { outline: 3px solid var(--accent); outline-offset: -3px; }
+.chip { display: flex; align-items: center; gap: 8px; margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+.chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); flex: none; }
+.chip.off .dot { background: var(--warn); }
+ol.steps { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; color: var(--ink); }
+code { font-size: 12px; word-break: break-all; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; display: block; }
+details { font-size: 14px; }
+summary { cursor: pointer; color: var(--muted); padding: 4px 0; }
+details[open] summary { margin-bottom: 10px; }
+.det { display: flex; flex-direction: column; gap: 12px; }
+textarea { font: inherit; font-size: 16px; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 11px 12px; width: 100%; min-width: 0; resize: vertical; }
+textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.hist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hist li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 12px 0; border-top: 1px solid var(--line); align-items: center; }
+.hist .l1 { font-weight: 600; font-size: 15px; font-variant-numeric: tabular-nums; }
+.hist .l2 { color: var(--muted); font-size: 13px; }
+.hist .l3 { font-size: 14px; font-variant-numeric: tabular-nums; }
+.hist .l1, .hist .l2, .hist .l3 { grid-column: 1; min-width: 0; overflow-wrap: anywhere; }
+.hist button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+.hist button.sure { color: var(--danger); border-color: var(--danger); }
+.hist .act { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; gap: 6px; }
+.hist .act button { grid-column: auto; grid-row: auto; }
+.hist button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+input[type="file"] { font: inherit; font-size: 14px; color: var(--ink); max-width: 100%; }
+main { gap: 10px; }
+.result { padding: 10px; gap: 8px; }
+.result .hero .time { font-size: 34px; }
+.result label { font-size: 12px; }
+.result input[type="number"] { padding: 6px 8px; min-height: 38px; }
+.result .btns a.btn { min-height: 42px; }
+.row3 { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+section { padding: 12px; gap: 10px; border-radius: 12px; }
+.hero .time { font-size: 38px; }
+.btns { flex-direction: column; gap: 8px; }
+.toprow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.toprow .hero { flex: 1; min-width: 0; overflow: hidden; }
+.toprow .btns { flex: 0 0 150px; }
+.result .toprow .btns a.btn { min-height: 56px; font-size: 15px; line-height: 1.25; }
+.toprow .btns p.note { margin: 0; font-size: 11px; line-height: 1.3; text-align: center; }
+.result .hero .time { white-space: nowrap; }
+.toprow + p.note { margin: 6px 0 0; }
+details#enDet { margin-top: 0; }
+.btns a.btn { width: 100%; min-height: 48px; padding: 10px 8px; font-size: 16px; }
+.btns details, .btns p { flex-basis: 100%; }
+select, input[type="text"], input[type="number"] { padding: 9px 10px; }
+body { padding-block: 12px 24px; }
+h1 { font-size: 22px; }
+details > summary .st { display: block; font-family: var(--font-display); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+details > summary .ss { display: block; font-size: 14px; color: var(--ink); margin-top: 2px; }
+details#devDet > summary, details#plugDet > summary, details#afDet > summary { padding: 0; list-style: none; }
+details#devDet > summary::-webkit-details-marker, details#plugDet > summary::-webkit-details-marker, details#afDet > summary::-webkit-details-marker { display: none; }
+details > summary .st::before { content: "▶ "; font-size: 10px; }
+details[open] > summary .st::before { content: "▼ "; }
+.tst { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted); min-width: 0; }
+.tst b { display: flex; align-items: center; min-height: 42px; padding: 9px 10px; border: 1px dashed var(--line); border-radius: 10px; font-size: 16px; font-weight: 600; color: var(--ink); }
+</style>
+</head>
+<body>
+
+<div id="resume" aria-live="polite">Seite wird wieder geöffnet…</div>
+<main>
+  <header class="top">
+    <h1>eBike Ladeplaner</h1>
+    <select id="profSel" aria-label="Profil (Steckdose)"></select>
+  </header>
+  <section id="profPanel" class="profpanel" hidden>
+    <h2>Profil bearbeiten</h2>
+    <label for="profName">Name des Profils
+      <input id="profName" type="text" autocomplete="off" maxlength="30">
+    </label>
+    <button type="button" class="btn ghost" id="profDel">Profil löschen</button>
+    <p class="note" id="profNote"></p>
+    <button type="button" class="btn go" id="profDone">Fertig</button>
+  </section>
+  <details class="hint"><summary>Kurzanleitung</summary><p class="note">Beim ersten Mal: oben rechts „+ Profil hinzufügen“ (ein Profil ist eine Steckdose). Es öffnet sich oben ein Feld für den Namen, mit „Fertig“ schließt es sich. Akku &amp; Ladegerät und Steckdose stellst du unten ein. Ändern oder löschen kannst du ein Profil über „Profil bearbeiten …“ und „Profil löschen …“ in der Auswahl. Danach nur noch den Ladestand eintragen (die Temperatur trägt die Seite meist selbst ein) und „Ladevorgang starten“ antippen. Nach dem Laden den erreichten Ladestand eintragen.</p></details>
+
+  <div class="todo">
+    <div class="trow" id="doneRemind" hidden role="status"><i class="dot"></i><span class="tx"><span id="doneTxt"></span><small id="doneSub"></small></span><button type="button" id="doneGo">Eintragen</button></div>
+    <div class="trow" id="bkTopMsg" hidden role="status"><i class="dot"></i><span class="tx" style="font-weight:400"></span></div>
+    <div class="trow" id="bkTop" hidden role="status"><i class="dot"></i><span class="tx"><span id="bkTopTxt"></span><small id="bkTopSub"></small></span><button type="button" id="bkTopGo">Sichern</button></div>
+  </div>
+
+  <div class="ov" id="dlgOv" hidden>
+    <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
+      <h2 id="dlgTitle">Ladung eintragen</h2>
+      <p class="ds" id="dlgSub"></p>
+      <span class="num"><input id="dlgIn" type="number" inputmode="numeric" min="0" max="100" step="1" aria-label="Erreichter Ladestand"><span>%</span></span>
+      <div class="cap">Erreichter Ladestand</div>
+      <p class="err" id="dlgErr" aria-live="polite"></p>
+      <div class="brow"><button type="button" class="btn ghost" id="dlgCancel">Abbrechen</button><button type="button" class="btn go" id="dlgSave">Speichern</button></div>
+      <div class="sep"></div>
+      <button type="button" class="btn dsc" id="dlgDrop">Ladung verwerfen</button>
+    </div>
+  </div>
+
+  <section class="result" aria-live="polite">
+    <div class="toprow">
+    <div class="hero">
+      <div class="dlabel" id="dlabel">Abschalt-Timer</div>
+      <div class="time" id="dur">–</div>
+      <div class="fin" id="fin"></div>
+    </div>
+    <div class="btns">
+    <a class="btn go" id="btnOn" href="#" target="_blank" rel="noopener">Ladevorgang starten</a>
+    <p class="note" id="startHint">öffnet 2 Sek. ein Fenster, schließt sich selbst</p>
+    </div>
+    </div>
+    <p class="note" id="ipHint" hidden>Erst unten bei „Steckdose“ die IP-Adresse eintragen, dann werden die Schaltflächen aktiv.</p>
+    <details class="hint" id="enDet"><summary>Energie-Details</summary>
+    <div>
+      <div class="gauge" aria-hidden="true">
+        <div class="have" id="gHave"></div><div class="add" id="gAdd"></div><div class="m80"></div><div class="tgtl" id="gTgt"></div>
+      </div>
+    </div>
+    <div class="scale" aria-hidden="true"><span>0 %</span><span>50 %</span><span>100 %</span></div>
+    <p class="note" id="gNow" hidden></p>
+    <dl class="stats two" style="margin:12px 0 0">
+      <div><dt>Im Akku jetzt</dt><dd id="sNow">–</dd></div>
+      <div><dt>Dazu geladen</dt><dd id="sBat">–</dd></div>
+      <div><dt>Im Akku danach</dt><dd id="sAfter">–</dd></div>
+      <div><dt>Verbrauch an der Steckdose</dt><dd id="sWall">–</dd></div>
+    </dl>
+    </details>
+    <h2>Ladestand</h2>
+    <div class="row row3">
+      <label for="cur">Aktuell
+        <span class="num"><input id="cur" type="number" inputmode="numeric" min="0" max="100" step="1"><span>%</span></span>
+      </label>
+      <label for="tgt">Laden bis
+        <span class="num"><input id="tgt" type="number" inputmode="numeric" min="0" max="100" step="1"><span>%</span></span>
+      </label>
+      <label for="temp">Temp. bei Start
+        <span class="num"><input id="temp" type="number" step="any" min="-60" max="70" autocomplete="off" placeholder="z. B. 12"><span>°C</span></span>
+      </label>
+    </div>
+    <p class="note" id="autoNote" style="margin:0" hidden></p>
+    <p class="msg" id="tempWarn" hidden></p>
+    <details class="hint"><summary>Hinweise</summary>
+      <p class="note"><b>Temperatur bei Start</b></p>
+      <p class="note" id="tempNote"></p>
+      <p class="note"><b>Korrektur</b></p>
+      <p class="note" id="corrNote"></p>
+      <p class="note"><b>Schaltflächen</b></p>
+      <p class="note">Ohne diese Seite: Drückst du die Taste an der Steckdose (oder „Ein“ in der Shelly-App), lädt sie 1 Std. 30 Min. und schaltet dann ab. Dafür muss das Skript bzw. die Regel eingerichtet sein (siehe README).</p>
+      <p class="note">Beim Antippen von „Ladevorgang starten“ oder „abbrechen“ erscheint für etwa 2 Sekunden ein kleines Fenster. Damit geht der Befehl an die Steckdose, und es schließt sich danach von selbst wieder. Dein Handy muss dafür im gewählten WLAN sein. Ob die Steckdose wirklich geschaltet hat, siehst du am Gerät oder mit „Status der Steckdose anzeigen“. Öffnet sich der Tab nicht oder schließt er sich nicht, erlaubt der Browser das nicht, dann bleibt der Tab mit der Antwort der Steckdose offen und du schließt ihn selbst. Danach schaltet die Steckdose selbst ab, auch wenn du weggehst.</p>
+      <p class="note">Beim Tippen auf „Ladevorgang starten“ merkt sich die Seite Start und Abschaltzeit, die Uhr oben läuft danach herunter. Solange sie läuft und die Seite sichtbar ist, bleibt der Bildschirm an (wenn dein Browser das erlaubt). Der Balken unter „Energie-Details“ zeigt den geschätzten Stand nach Zeitplan, nicht den echten. Der Knopf heißt während der Ladung „Ladevorgang abbrechen“. Er schaltet die Steckdose aus und verwirft die gemerkte Ladung ohne Verlaufseintrag. Ob die Steckdose wirklich noch lädt, weiß die Seite nicht: Schaltest du sie von Hand oder per App aus, zeigt der Knopf trotzdem „abbrechen“, bis die berechnete Zeit vorbei ist. Nach Ablauf der Zeit steht oben eine Karte mit dem Knopf „Eintragen“. Die Ladung bleibt auch unter „Nach dem Laden“ stehen, bis du sie speicherst, verwirfst oder abbrichst. Eine Benachrichtigung bei geschlossener Seite gibt es nicht.</p>
+    </details>
+    <p class="msg" id="msg" hidden></p>
+    <details>
+      <summary>Feineinstellung der Berechnung</summary>
+      <div class="det">
+        <p class="note"><b>Nur ändern, wenn du weißt, warum.</b> Meist musst du hier nichts einstellen.</p>
+        <div class="row">
+          <label for="eff">Wirkungsgrad
+            <span class="num"><input id="eff" type="number" inputmode="decimal" min="50" max="100" step="1"><span>%</span></span>
+          </label>
+        </div>
+        <p class="note">Der Wirkungsgrad gibt an, wie viel der Energie aus der Steckdose im Akku ankommt. Er bestimmt die Abschaltschwelle bei „Nach Verbrauch“. Ab 80 % rechnet die Seite mit halber Ladeleistung, weil der Akku zum Ende langsamer lädt. Die große Zeit oben ist bei „Nach Timer“ die Dauer des Abschalt-Timers, bei „Nach Verbrauch“ die voraussichtliche Zeit bis zur erreichten Energiemenge. Die Korrekturfaktoren (bis 80 % und ab 80 %) gleichen aus, dass Akkus meist etwas langsamer laden als gerechnet.</p>
+      </div>
+    </details>
+  </section>
+  <section id="after">
+    <details id="afDet">
+      <summary><b class="st">Nach dem Laden</b><span class="ss" id="afSum"></span></summary>
+      <div class="det">
+    <p class="note" id="pendNote"></p>
+    <div class="row">
+      <label for="reached">Erreichter Ladestand
+        <span class="num"><input id="reached" type="number" inputmode="numeric" min="0" max="100" step="1"><span>%</span></span>
+      </label>
+    </div>
+    <button type="button" class="btn go" id="saveRun">In den Verlauf speichern</button>
+    <button type="button" class="btn ghost" id="dropPend" hidden>Gemerkte Ladung verwerfen</button>
+    <p class="note" id="saveMsg" aria-live="polite"></p>
+    <details class="hint"><summary>Wozu ist das?</summary><p class="note">Lies den Ladestand am Bosch-Display ab. Die Seite lernt daraus, wie viel Energie dein Akku pro Prozent wirklich braucht, und rechnet beim nächsten Mal damit. Gespeichert werden außerdem „Aktuell“, „Laden bis“ und die Temperatur von oben. Falsch eingetragen? Unter „Alle Ladungen anzeigen“ im Verlauf kannst du den Ladestand mit „Ändern“ korrigieren.</p></details>
+      </div>
+    </details>
+  </section>
+
+  <section id="secDev">
+    <details id="devDet">
+      <summary><b class="st">Akku &amp; Ladegerät</b><span class="ss" id="devSum"></span></summary>
+      <div class="det">
+        <div class="row">
+          <label for="batt">Akku
+            <select id="batt"></select>
+          </label>
+          <label for="chg">Ladegerät
+            <select id="chg"></select>
+          </label>
+        </div>
+        <div class="row">
+          <label for="cap">Kapazität
+            <span class="num"><input id="cap" type="number" inputmode="decimal" min="1" step="1"><span>Wh</span></span>
+          </label>
+          <label for="pow">Ladeleistung
+            <span class="num"><input id="pow" type="number" inputmode="decimal" min="1" step="1"><span>W</span></span>
+          </label>
+        </div>
+        <div class="row">
+          <label for="bs">Batterieschutz alle … Ladestarts
+            <span class="num"><input id="bs" type="number" inputmode="numeric" min="0" max="99" step="1" placeholder="aus"><span>×</span></span>
+          </label>
+        </div>
+        <details class="hint"><summary>Hinweis zum Batterieschutz</summary><p class="note" id="bsNote"></p></details>
+        <details class="hint"><summary>Hinweis zu den Werten</summary><p class="note">Die Werte für Akkus und Ladegeräte sind Näherungen, beide Felder lassen sich überschreiben.</p></details>
+        <details class="hint" id="chgHint" hidden><summary>Hinweis zum Charger 12 A</summary><p class="note" id="chgNote">Beim Charger 12 A richtet sich die Leistung nach dem Akku (Näherung aus den Bosch-Ladezeiten bis 50 %). Du kannst den Wert überschreiben. Für PowerPack 300 gibt es keine Bosch-Angabe, dort rechnet die Seite mit 200 W. Der Charger 12 A passt laut Bosch nur zu Akkus des Smart Systems ab Modelljahr 2022.</p></details>
+      </div>
+    </details>
+  </section>
+
+  <section id="secPlug">
+    <details id="plugDet">
+      <summary><b class="st">Steckdose</b><span class="ss" id="plugSum"></span></summary>
+      <div class="det">
+    <fieldset class="seg" aria-label="Steckdosen-Typ">
+      <input type="radio" name="plug" id="pShelly" value="shelly"><label for="pShelly">Shelly</label>
+      <input type="radio" name="plug" id="pTasmota" value="tasmota"><label for="pTasmota">Tasmota</label>
+    </fieldset>
+    <fieldset class="seg" aria-label="Verbindung zur Steckdose">
+      <input type="radio" name="net" id="nHome" value="home"><label for="nHome">Heim-WLAN</label>
+      <input type="radio" name="net" id="nAp" value="ap"><label for="nAp">WLAN der Steckdose</label>
+    </fieldset>
+    <label for="ip">IP-Adresse der Steckdose im Heim-WLAN
+      <input id="ip" type="text" inputmode="decimal" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="z. B. 192.168.1.50">
+    </label>
+    <details class="hint"><summary>Hinweis zur Verbindung</summary><p class="note" id="netNote"></p></details>
+    <details>
+      <summary>Ablauf ohne Internet (WLAN der Steckdose)</summary>
+      <div class="det">
+        <ol class="steps">
+          <li>Diese Seite mit Internet laden und alles einstellen. Das Tab offen lassen.</li>
+          <li>In den WLAN-Einstellungen deines Handys das WLAN der Steckdose wählen, bei Shelly heißt es etwa <b>ShellyPlugSG3-XXXXXX</b>, bei Tasmota <b>tasmota-XXXXXX</b> (nur, wenn die Steckdose kein WLAN findet).</li>
+          <li>Zurück zu diesem Tab wechseln und „Laden starten“ antippen.</li>
+          <li>Danach kannst du wieder das WLAN wechseln. Die Steckdose schaltet selbst ab.</li>
+        </ol>
+        <p class="note">Wenn der Browser das Tab neu lädt, braucht die Seite Internet. Lass im Steckdosen-WLAN das Mobilfunknetz eingeschaltet.</p>
+      </div>
+    </details>
+    <fieldset class="seg" aria-label="Art der Abschaltung">
+      <input type="radio" name="mode" id="mScript" value="script"><label for="mScript">Nach Verbrauch</label>
+      <input type="radio" name="mode" id="mTimer" value="timer"><label for="mTimer">Nach Timer</label>
+    </fieldset>
+    <details class="hint"><summary>Hinweis zur Abschaltung</summary><p class="note" id="modeNote"></p></details>
+    <a class="btn ghost" id="btnStat" href="#" target="_blank" rel="noopener">Status der Steckdose anzeigen</a>
+    <details>
+      <summary>Skript-Nummer</summary>
+      <div class="det">
+        <label for="sid">Nummer des Skripts in der Liste der Steckdose (meist 1)
+          <input id="sid" type="number" inputmode="numeric" min="1" step="1">
+        </label>
+      </div>
+    </details>
+    <details>
+      <summary>Link kopieren</summary>
+      <div class="det">
+        <code id="urlOn">–</code>
+        <button type="button" class="btn ghost" id="copy">Link kopieren</button>
+      </div>
+    </details>
+      </div>
+    </details>
+  </section>
+
+  <section id="histSec">
+    <h2>Verlauf</h2>
+    <p class="note" style="margin-top:0">Zeigt die Ladungen des gewählten Profils. Jedes Profil lernt für sich, nur aus seinen eigenen Ladungen.</p>
+    <dl class="stats" style="margin:0">
+      <div><dt>Gesamt</dt><dd id="hTotal">–</dd></div>
+      <div><dt>Ladungen</dt><dd id="hCount">–</dd></div>
+      <div><dt>Ø pro Ladung</dt><dd id="hAvg">–</dd></div>
+    </dl>
+    <p class="note" id="hNote"></p>
+    <details class="hint" id="lcDet"><summary>Lernkurve (Diagramm)</summary>
+      <div id="lcBox"></div>
+      <p class="note" id="lcNote"></p>
+      <p class="note">Die Seite rechnet mit zwei Korrekturfaktoren: einem für 0 bis 80 % und einem für 80 bis 100 %, die Zeiten beider Teile werden addiert. Das Diagramm und das Lernmodell mit Temperatur gelten nur für den Bereich bis 80 %. Der Faktor ab 80 % wird erst ab 3 Ladungen über 80 % verwendet, vorher gilt ×1,00. Bis genug Ladungen da sind, gilt der Durchschnitt aller gespeicherten Ladungen dieses Akkus mit Ladegerät, schon ab der ersten.</p>
+    </details>
+    <details class="hint"><summary>Alle Ladungen anzeigen</summary><ul class="hist" id="hList"></ul></details>
+    <h2 style="margin-top:6px" class="sub2">Sicherung</h2>
+    <div class="det">
+        <p class="msg" id="bkLast"></p>
+        <details class="hint"><summary>Mehr zur Sicherung</summary><p class="note">Der Verlauf liegt nur in diesem Browser, der ihn bei Platzmangel oder längerer Nichtnutzung löschen darf. Sichere ihn ab und zu als Datei (Dateien, Drive oder Mail). Die Datei enthält auch deine Profile. Beim Wiederherstellen werden fehlende Ladungen und Profile ergänzt, nichts wird gelöscht.</p></details>
+        <button type="button" class="btn ghost" id="bkFile">Als Datei sichern</button>
+        <label class="filebtn" for="bkLoad">Aus Datei wiederherstellen
+          <input id="bkLoad" type="file" accept=".json,application/json,text/plain">
+        </label>
+        <p class="note" id="bkMsg" aria-live="polite"></p>
+      </div>
+  </section>
+
+  <p class="chip" id="chip"><span class="dot"></span><span id="chipT"></span></p>
+  <p class="note" id="buildStamp" style="text-align:center;margin:18px 0 8px;font-size:12px">Version aktualisiert am 17.11.2026 um 14:26 Uhr</p>
+  <div class="langsel" role="group" aria-label="Sprache / Language"><button type="button" id="langDe" aria-pressed="true">DE</button><span aria-hidden="true">|</span><button type="button" id="langEn" aria-pressed="false">EN</button></div>
+</main>
+
+<script>
+(function () {
+  var LANG = "de";
+  try { var sl = localStorage.getItem("ebikeLadeplanerLang"); LANG = (sl === "en" || sl === "de") ? sl : (String(navigator.language || "de").toLowerCase().indexOf("de") === 0 ? "de" : "en"); } catch (e) {}
+  var EN = {"Ladung eintragen": "Enter charge", "Abbrechen": "Cancel", "Speichern": "Save", "Ladung verwerfen": "Discard charge", "Wirklich verwerfen?": "Really discard?", "Sichern": "Back up", "Zeigt die Ladungen des gewählten Profils. Jedes Profil lernt für sich, nur aus seinen eigenen Ladungen.": "Shows the charges of the selected profile. Each profile learns on its own, only from its own charges.", "Profil bearbeiten": "Edit profile", "Fertig": "Done", "Profil bearbeiten …": "Edit profile …", "Profil löschen …": "Delete profile …", "Seite wird wieder geöffnet…": "Reopening the page…", "Kurzanleitung": "Quick guide", "Eintragen": "Enter", "öffnet 2 Sek. ein Fenster, schließt sich selbst": "opens a window for 2 s, closes itself", "Erst unten bei „Steckdose“ die IP-Adresse eintragen, dann werden die Schaltflächen aktiv.": "First enter the IP address below under “Plug”, then the buttons become active.", "Energie-Details": "Energy details", "Im Akku jetzt": "In battery now", "Dazu geladen": "Added", "Im Akku danach": "In battery after", "Verbrauch an der Steckdose": "Consumption at the plug", "Ladestand": "Charge level", "Aktuell": "Current", "Laden bis": "Charge to", "Temp. bei Start": "Temp. at start", "Hinweise": "Notes", "Temperatur bei Start": "Temperature at start", "Korrektur": "Correction", "Schaltflächen": "Buttons", "Ohne diese Seite: Drückst du die Taste an der Steckdose (oder „Ein“ in der Shelly-App), lädt sie 1 Std. 30 Min. und schaltet dann ab. Dafür muss das Skript bzw. die Regel eingerichtet sein (siehe README).": "Without this page: if you press the button on the plug (or “On” in the Shelly app), it charges for 1 h 30 min and then switches off. For this the script or rule must be set up (see README).", "Beim Antippen von „Ladevorgang starten“ oder „abbrechen“ erscheint für etwa 2 Sekunden ein kleines Fenster. Damit geht der Befehl an die Steckdose, und es schließt sich danach von selbst wieder. Dein Handy muss dafür im gewählten WLAN sein. Ob die Steckdose wirklich geschaltet hat, siehst du am Gerät oder mit „Status der Steckdose anzeigen“. Öffnet sich der Tab nicht oder schließt er sich nicht, erlaubt der Browser das nicht, dann bleibt der Tab mit der Antwort der Steckdose offen und du schließt ihn selbst. Danach schaltet die Steckdose selbst ab, auch wenn du weggehst.": "When you tap “Start charging” or “Cancel”, a small window appears for about 2 seconds. That sends the command to the plug and closes itself afterwards. Your phone must be on the chosen Wi-Fi for this. Whether the plug really switched, you can see on the device or with “Show plug status”. If the tab does not open or does not close, the browser does not allow it; then the tab with the plug’s reply stays open and you close it yourself. After that the plug switches off by itself, even if you walk away.", "Feineinstellung der Berechnung": "Fine-tuning the calculation", "Nur ändern, wenn du weißt, warum.": "Only change this if you know why.", "Wirkungsgrad": "Efficiency", "Nach dem Laden": "After charging", "Erreichter Ladestand": "Level reached", "In den Verlauf speichern": "Save to history", "Gemerkte Ladung verwerfen": "Discard remembered charge", "Wozu ist das?": "What is this for?", "Akku & Ladegerät": "Battery & charger", "Akku": "Battery", "Ladegerät": "Charger", "Kapazität": "Capacity", "Ladeleistung": "Charging power", "Batterieschutz alle … Ladestarts": "Battery protection every … charge starts", "Hinweis zum Batterieschutz": "Note on battery protection", "Hinweis zu den Werten": "Note on the values", "Hinweis zum Charger 12 A": "Note on the Charger 12 A", "Beim Charger 12 A richtet sich die Leistung nach dem Akku (Näherung aus den Bosch-Ladezeiten bis 50 %). Du kannst den Wert überschreiben. Für PowerPack 300 gibt es keine Bosch-Angabe, dort rechnet die Seite mit 200 W. Der Charger 12 A passt laut Bosch nur zu Akkus des Smart Systems ab Modelljahr 2022.": "With the Charger 12 A the power depends on the battery (approximation from the Bosch charging times up to 50 %). You can overwrite the value. For PowerPack 300 Bosch gives no figure, the page uses 200 W there. According to Bosch the Charger 12 A only fits Smart System batteries from model year 2022.", "Steckdose": "Plug", "Name des Profils": "Profile name", "Heim-WLAN": "Home Wi-Fi", "WLAN der Steckdose": "Plug’s Wi-Fi", "IP-Adresse der Steckdose im Heim-WLAN": "IP address of the plug in the home Wi-Fi", "Hinweis zur Verbindung": "Note on the connection", "Ablauf ohne Internet (WLAN der Steckdose)": "Procedure without internet (plug’s Wi-Fi)", "Diese Seite mit Internet laden und alles einstellen. Das Tab offen lassen.": "Load this page with internet and set everything up. Keep the tab open.", "In den WLAN-Einstellungen deines Handys das WLAN der Steckdose wählen, bei Shelly heißt es etwa": "In your phone’s Wi-Fi settings choose the plug’s Wi-Fi; for Shelly it is called something like", ", bei Tasmota": ", for Tasmota", "(nur, wenn die Steckdose kein WLAN findet).": "(only if the plug finds no Wi-Fi).", "Zurück zu diesem Tab wechseln und „Laden starten“ antippen.": "Switch back to this tab and tap “Start charging”.", "Danach kannst du wieder das WLAN wechseln. Die Steckdose schaltet selbst ab.": "Afterwards you can switch Wi-Fi again. The plug switches off by itself.", "Wenn der Browser das Tab neu lädt, braucht die Seite Internet. Lass im Steckdosen-WLAN das Mobilfunknetz eingeschaltet.": "If the browser reloads the tab, the page needs internet. Keep mobile data switched on while on the plug’s Wi-Fi.", "Nach Verbrauch": "By consumption", "Nach Timer": "By timer", "Hinweis zur Abschaltung": "Note on the shutoff", "Status der Steckdose anzeigen": "Show plug status", "Skript-Nummer": "Script number", "Nummer des Skripts in der Liste der Steckdose (meist 1)": "Number of the script in the plug’s list (usually 1)", "Link kopieren": "Copy link", "Verlauf": "History", "Gesamt": "Total", "Ladungen": "Charges", "Ø pro Ladung": "Ø per charge", "Lernkurve (Diagramm)": "Learning curve (chart)", "Alle Ladungen anzeigen": "Show all charges", "Sicherung": "Backup", "Als Datei sichern": "Back up as file", "Aus Datei wiederherstellen": "Restore from file", "Profil löschen": "Delete profile", "z. B. 12": "e.g. 12", "aus": "off", "z. B. 192.168.1.50": "e.g. 192.168.1.50", "Profil (Steckdose)": "Profile (plug)", "Steckdosen-Typ": "Plug type", "Verbindung zur Steckdose": "Connection to the plug", "Art der Abschaltung": "Shutoff mode", "Wählen …": "Choose …", "Eigene Werte …": "Custom values …", "Kein Profil": "No profile", "+ Profil hinzufügen": "+ Add profile", "Ladevorgang starten": "Start charging", "Ladevorgang abbrechen": "Cancel charging", "Batterieschutz 100 % starten": "Start battery protection 100 %", "Abschalt-Timer": "Shutoff timer", "Voraussichtliche Zeit (nach Verbrauch)": "Expected time (by consumption)", "Restzeit bis zum Abschalt-Timer": "Time left until the shutoff timer", "Erst Akku und Ladegerät wählen (unter „Akku & Ladegerät“).": "First choose battery and charger (under “Battery & charger”).", "Das Ziel muss über dem aktuellen Ladestand liegen.": "The target must be above the current charge level.", "Erst die IP-Adresse eintragen.": "First enter the IP address.", "Erst Akku, Ladegerät, Ziel und IP-Adresse prüfen.": "First check battery, charger, target and IP address.", "Ziel erreicht (geschätzt nach Zeitplan)": "Target reached (estimated by schedule)", "Batterieschutz: Restzeit bis zum Abschalt-Timer": "Battery protection: time left until the shutoff timer", "Batterieschutz-Timer (auf 100 %)": "Battery protection timer (to 100 %)", "Schaltet ein und nach der berechneten Zeit wieder aus. Keine Einrichtung nötig, die Abschaltung ist aber ungenauer.": "Switches on and off again after the calculated time. No setup needed, but the shutoff is less exact.", " Mit dem Shelly-Skript wird dieser Timer nicht auf 90 Minuten gekürzt, sofern die Steckdose ihn meldet. Sonst „Nach Verbrauch“ nehmen.": " With the Shelly script this timer is not shortened to 90 minutes, provided the plug reports it. Otherwise use “By consumption”.", "Schaltet ein, setzt die Energiegrenze und schaltet den Timer ab. Die Regel auf der Steckdose schaltet bei erreichter Energiemenge ab (Einrichtung siehe README).": "Switches on, sets the energy limit and disables the timer. The rule on the plug switches off when the energy amount is reached (setup see README).", "Schaltet ein und schickt Akku, Ladegerät und Ladestand an das Skript auf der Steckdose. Es schaltet bei erreichter Energiemenge ab oder wenn das Ladegerät keinen Strom mehr zieht. Eine Zeitgrenze gibt es nicht.": "Switches on and sends battery, charger and charge level to the script on the plug. It switches off when the energy amount is reached or when the charger no longer draws current. There is no time limit.", "Die Eingabe ist keine gültige Temperatur. ": "The input is not a valid temperature. ", "Akku fehlt": "Battery missing", "Ladegerät fehlt": "Charger missing", "bitte wählen": "please choose", "IP fehlt": "IP missing", "Die Links nutzen die feste Adresse 192.168.33.1 der Steckdose. Dein Handy muss mit dem WLAN der Steckdose verbunden sein.": "The links use the plug’s fixed address 192.168.33.1. Your phone must be connected to the plug’s Wi-Fi.", "Die Steckdose und dein Handy sind im selben Heim-WLAN. Statt der IP-Adresse kannst du auch den Gerätenamen der Steckdose eintragen, zum Beispiel shellyplugsg3-XXXXXX.local. Das klappt nicht auf jedem Handy.": "The plug and your phone are on the same home Wi-Fi. Instead of the IP address you can enter the plug’s device name, for example shellyplugsg3-XXXXXX.local. This does not work on every phone.", "Jedes Profil ist eine Steckdose mit einem Akku und einem Ladegerät. Beim Wechseln des Profils wechseln auch Akku, Ladegerät, Ladestand und Einstellungen. Gelöscht wird nur das Profil, die gespeicherten Ladungen bleiben im Verlauf.": "Each profile is one plug with one battery and one charger. When you switch profiles, battery, charger, charge level and settings switch too. Only the profile is deleted, the saved charges stay in the history.", "Wirklich löschen?": "Really delete?", "Wirklich?": "Really?", "Löschen": "Delete", "Kopiert": "Copied", " Trage die Temperatur von Hand ein.": " Enter the temperature by hand.", "Standort ist hier nicht verfügbar.": "Location is not available here.", "Kein Internet.": "No internet.", "Außentemperatur nicht geholt.": "Outdoor temperature not fetched.", "Kein Standort freigegeben.": "No location permission given.", "Seite geladen, rechnet auch ohne Internet.": "Page loaded, works without internet too.", "Kein Internet, die Seite rechnet weiter.": "No internet, the page keeps calculating.", "Noch keine Ladung gespeichert.": "No charge saved yet.", "Bitte den erreichten Ladestand (0 bis 100 %) eintragen.": "Please enter the level reached (0 to 100 %).", "Eine Batterieschutz-Ladung wird nicht gespeichert. Sie läuft von selbst aus.": "A battery-protection charge is not saved. It simply runs out.", "Bitte oben „Aktuell“ und „Laden bis“ prüfen: Das Ziel muss über dem Ladestand liegen.": "Please check “Current” and “Charge to” above: the target must be above the charge level.", "Mit diesen Werten lässt sich nichts berechnen.": "Nothing can be calculated with these values.", "Der erreichte Ladestand muss über dem Start liegen.": "The level reached must be above the start.", "Mit diesen Werten lässt sich keine Korrektur berechnen.": "No correction can be calculated with these values.", "Das ist keine gültige Sicherung.": "This is not a valid backup.", "In der Home-Bildschirm-App erlaubt das iPhone keine Downloads. Öffne die Seite im Browser und sichere dort.": "In the home-screen app the iPhone does not allow downloads. Open the page in the browser and back up there.", "Die Datei konnte nicht erzeugt werden.": "The file could not be created.", "Die Datei konnte nicht gelesen werden.": "The file could not be read.", "Abgebrochen. Es wurde nichts gesichert.": "Cancelled. Nothing was backed up.", "Wähle erst Akku und Ladegerät.": "First choose battery and charger.", "Beim ersten Mal: oben rechts „+ Profil hinzufügen“ (ein Profil ist eine Steckdose). Es öffnet sich oben ein Feld für den Namen, mit „Fertig“ schließt es sich. Akku & Ladegerät und Steckdose stellst du unten ein. Ändern oder löschen kannst du ein Profil über „Profil bearbeiten …“ und „Profil löschen …“ in der Auswahl. Danach nur noch den Ladestand eintragen (die Temperatur trägt die Seite meist selbst ein) und „Ladevorgang starten“ antippen. Nach dem Laden den erreichten Ladestand eintragen.": "The first time: at the top right choose “+ Add profile” (a profile is one plug). A panel opens at the top for the name; “Done” closes it. You set battery & charger and plug further down. You can change or delete a profile with “Edit profile …” and “Delete profile …” in the selector. After that just enter the charge level (the page usually fills in the temperature itself) and tap “Start charging”. After charging, enter the level reached.", "Meist musst du hier nichts einstellen.": "Usually you do not need to set anything here.", "Beim Tippen auf „Ladevorgang starten“ merkt sich die Seite Start und Abschaltzeit, die Uhr oben läuft danach herunter. Solange sie läuft und die Seite sichtbar ist, bleibt der Bildschirm an (wenn dein Browser das erlaubt). Der Balken unter „Energie-Details“ zeigt den geschätzten Stand nach Zeitplan, nicht den echten. Der Knopf heißt während der Ladung „Ladevorgang abbrechen“. Er schaltet die Steckdose aus und verwirft die gemerkte Ladung ohne Verlaufseintrag. Ob die Steckdose wirklich noch lädt, weiß die Seite nicht: Schaltest du sie von Hand oder per App aus, zeigt der Knopf trotzdem „abbrechen“, bis die berechnete Zeit vorbei ist. Nach Ablauf der Zeit steht oben eine Karte mit dem Knopf „Eintragen“. Die Ladung bleibt auch unter „Nach dem Laden“ stehen, bis du sie speicherst, verwirfst oder abbrichst. Eine Benachrichtigung bei geschlossener Seite gibt es nicht.": "When you tap “Start charging”, the page remembers start and switch-off time, and the clock at the top counts down. While it runs and the page is visible, the screen stays on (if your browser allows it). The bar under “Energy details” shows the estimated state according to schedule, not the real one. During charging the button reads “Cancel charging”. It switches the plug off and discards the remembered charge without a history entry. The page does not know whether the plug is really still charging: if you switch it off by hand or by app, the button still shows “Cancel” until the calculated time is over. When the time is over, a card with the button “Enter” appears at the top. The charge also stays under “After charging” until you save, discard or cancel it. There is no notification while the page is closed.", "Der Wirkungsgrad gibt an, wie viel der Energie aus der Steckdose im Akku ankommt. Er bestimmt die Abschaltschwelle bei „Nach Verbrauch“. Ab 80 % rechnet die Seite mit halber Ladeleistung, weil der Akku zum Ende langsamer lädt. Die große Zeit oben ist bei „Nach Timer“ die Dauer des Abschalt-Timers, bei „Nach Verbrauch“ die voraussichtliche Zeit bis zur erreichten Energiemenge. Die Korrekturfaktoren (bis 80 % und ab 80 %) gleichen aus, dass Akkus meist etwas langsamer laden als gerechnet.": "Efficiency tells how much of the energy from the plug arrives in the battery. It sets the switch-off threshold for “By consumption”. Above 80 % the page calculates with half charging power, because the battery charges more slowly towards the end. The big time at the top is the duration of the shutoff timer with “By timer” and the expected time until the energy amount is reached with “By consumption”. The correction factors (up to 80 % and above 80 %) compensate for batteries usually charging a little slower than calculated.", "Die Werte für Akkus und Ladegeräte sind Näherungen, beide Felder lassen sich überschreiben.": "The values for batteries and chargers are approximations, both fields can be overwritten.", "Akkus gleichen ihre Zellen beim Laden auf 100 % aus (Balancing). Trage ein, nach wie vielen Ladestarts das nötig ist. Voreingestellt sind 10. Leer oder 0 schaltet es aus. Die Seite zählt die Ladestarts dieses Profils (auch abgebrochene). Ist die Zahl erreicht, heißt der Knopf „Batterieschutz 100 % starten“ und startet immer einen Timer, egal welcher Abschaltmodus gewählt ist: Charger 2 A 13 Stunden, 4 A 8 Stunden, 6 A und 12 A 6 Stunden. Die Zahl wird mit dem Profil gesichert, der Zählerstand nicht. Eine Batterieschutz-Ladung wird nicht im Verlauf gespeichert und nicht fürs Lernen genutzt.": "Batteries balance their cells when charged to 100 %. Enter after how many charge starts this is needed. The default is 10. Empty or 0 switches it off. The page counts the charge starts of this profile (cancelled ones too). When the number is reached, the button reads “Start battery protection 100 %” and always starts a timer, whatever shutoff mode is chosen: Charger 2 A 13 hours, 4 A 8 hours, 6 A and 12 A 6 hours. The number is saved with the profile, the counter is not. A battery-protection charge is not saved to the history and not used for learning.", "Die Seite rechnet mit zwei Korrekturfaktoren: einem für 0 bis 80 % und einem für 80 bis 100 %, die Zeiten beider Teile werden addiert. Das Diagramm und das Lernmodell mit Temperatur gelten nur für den Bereich bis 80 %. Der Faktor ab 80 % wird erst ab 3 Ladungen über 80 % verwendet, vorher gilt ×1,00. Bis genug Ladungen da sind, gilt der Durchschnitt aller gespeicherten Ladungen dieses Akkus mit Ladegerät, schon ab der ersten.": "The page uses two correction factors: one for 0 to 80 % and one for 80 to 100 %; the times of both parts are added. The chart and the learning model with temperature only apply to the range up to 80 %. The factor above 80 % is only used from 3 charges above 80 %; before that ×1.00 applies. Until enough charges exist, the average of all saved charges of this battery with charger applies, from the very first one.", "Der Verlauf liegt nur in diesem Browser, der ihn bei Platzmangel oder längerer Nichtnutzung löschen darf. Sichere ihn ab und zu als Datei (Dateien, Drive oder Mail). Die Datei enthält auch deine Profile. Beim Wiederherstellen werden fehlende Ladungen und Profile ergänzt, nichts wird gelöscht.": "The history is only stored in this browser, which may delete it when space runs short or after long non-use. Back it up as a file now and then (Files, Drive or mail). The file also contains your profiles. On restore, missing charges and profiles are added; nothing is deleted.", "Mehr zur Sicherung": "More about the backup", "Die Temperatur trägt die Seite beim Öffnen selbst ein (nur mit Internet und Standortfreigabe, nicht im WLAN der Steckdose). Du kannst sie überschreiben. Sie wird beim Start mit der Ladung gespeichert, daraus lernt die Seite, wie die Temperatur die Ladezeit beeinflusst. Ohne Temperatur rechnet sie nur nach dem Ladebereich.": "The page fills in the temperature itself when it opens (only with internet and location permission, not on the plug’s Wi-Fi). You can overwrite it. It is saved with the charge at start; from this the page learns how temperature affects charging time. Without a temperature it calculates by charge range only.", "⚠ Außerhalb von 0 bis 40 °C sollte der Akku nicht geladen werden.": "⚠ Outside 0 to 40 °C the battery should not be charged.", "Lies den Ladestand am Bosch-Display ab. Die Seite lernt daraus, wie viel Energie dein Akku pro Prozent wirklich braucht, und rechnet beim nächsten Mal damit. Gespeichert werden außerdem „Aktuell“, „Laden bis“ und die Temperatur von oben. Falsch eingetragen? Unter „Alle Ladungen anzeigen“ im Verlauf kannst du den Ladestand mit „Ändern“ korrigieren.": "Read the charge level on the Bosch display. The page learns from it how much energy your battery really needs per percent and uses it next time. “Current”, “Charge to” and the temperature from above are saved as well. Entered wrongly? Under “Show all charges” in the history you can correct the level with “Change”.", "Ändern": "Change", "Ladestand ändern": "Change charge level", "Nein, ändern": "No, change", "Ja, speichern": "Yes, save", "Eintrag nicht gefunden.": "Entry not found."};
+  function T(x) { return LANG === "en" && Object.prototype.hasOwnProperty.call(EN, x) ? EN[x] : x; }
+  function L(de, en) { return LANG === "en" ? en : de; }
+  function dc(x) { return LANG === "en" ? String(x) : String(x).replace(".", ","); }
+  function LOC() { return LANG === "en" ? "en-GB" : "de-DE"; }
+  var BATTERIES = [
+    ["pp300", "PowerPack 300", 300], ["pp400", "PowerPack 400", 400], ["pp500", "PowerPack 500", 500],
+    ["pt400", "PowerTube 400", 400], ["pt500", "PowerTube 500", 500], ["pt625", "PowerTube 625", 625],
+    ["pt750", "PowerTube 750", 750], ["pt800", "PowerTube 800", 800], ["custom", "Eigene Werte …", 500]
+  ];
+  var CHARGERS = [
+    ["std2", "Charger 2 A", 80], ["fast4", "Charger 4 A", 160],
+    ["pow6", "Charger 6 A", 240], ["c12", "Charger 12 A", 500], ["custom", "Eigene Werte …", 150]
+  ];
+  // 12A Charger: effektive Leistung je Akku, abgeleitet aus Bosch-Ladezeiten bis 50 % (Näherung)
+  var POW12 = { pp300: 200, pp400: 265, pp500: 210, pt400: 285, pt500: 210, pt625: 260, pt750: 310, pt800: 400, custom: 500 };
+  var TAPER_AT = 80, TAPER_FACTOR = 0.5;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var S = { batt: "", chg: "", cap: 0, pow: 0, cur: 20, tgt: 60, temp: "", ver: 2, eff: 85, ip: "", mode: "script", sid: 1, net: "home", plug: "shelly", bs: 10, cnt: 0 };
+  // Einstellungen, die zu einem Profil (= eine Steckdose mit Akku und Ladegerät) gehören
+  var PF = ["plug", "ip", "net", "sid", "mode", "batt", "chg", "cap", "pow", "eff", "cur", "tgt", "bs"];
+  var P = { list: [], active: "" };
+
+  try { var saved = JSON.parse(localStorage.getItem("ebikeLadeplaner") || "null"); if (saved) { for (var k in saved) if (k in S) S[k] = saved[k];
+    if (!(saved.ver >= 2)) { if (S.tgt === 80) S.tgt = 60; S.ver = 2; }
+    if (S.chg === "cmp2") S.chg = "std2"; if (S.chg === "perf4") S.chg = "fast4";
+  } } catch (e) {}
+  // Profile laden; beim ersten Öffnen werden die bisherigen Einstellungen zum Profil „Steckdose 1“
+  try { var ps = JSON.parse(localStorage.getItem("ebikeLadeplanerProf") || "null"); if (ps && Array.isArray(ps.list)) { P.list = ps.list; P.active = ps.active || ""; } } catch (e) {}
+  (function () {
+    var had = false; try { had = localStorage.getItem("ebikeLadeplanerProf") !== null; } catch (e) {}
+    if (!had && (S.batt || S.chg || String(S.ip).trim())) {
+      var pr = { id: "p" + Date.now(), name: "Steckdose 1", cnt: 0 }; PF.forEach(function (k) { pr[k] = S[k]; });
+      P.list = [pr]; P.active = pr.id;
+    }
+    var act = P.list.filter(function (x) { return x.id === P.active; })[0];
+    if (!act && P.list.length) { act = P.list[0]; P.active = act.id; }
+    if (act) { PF.forEach(function (k) { if (k in act) S[k] = act[k]; }); S.cnt = act.cnt || 0; }
+    S.temp = "";   // Temperatur wird bei jedem Öffnen neu geholt
+  })();
+  function activeProf() { for (var i = 0; i < P.list.length; i++) if (P.list[i].id === P.active) return P.list[i]; return null; }
+  function save() {
+    var a = activeProf();
+    if (a) { PF.forEach(function (k) { a[k] = S[k]; }); a.cnt = S.cnt; }
+    try { localStorage.setItem("ebikeLadeplaner", JSON.stringify(S)); localStorage.setItem("ebikeLadeplanerProf", JSON.stringify(P)); } catch (e) {}
+  }
+
+  // ---- Verlauf und Korrekturfaktor
+  var H = { entries: [], pendings: {}, lastBackup: 0 };
+  // H.pending ist die gemerkte Ladung des gerade gewählten Profils (jedes Profil hat seine eigene)
+  Object.defineProperty(H, "pending", {
+    enumerable: false,
+    get: function () { return H.pendings[P.active] || null; },
+    set: function (v) { if (v) H.pendings[P.active] = v; else delete H.pendings[P.active]; }
+  });
+  try {
+    var hs = JSON.parse(localStorage.getItem("ebikeLadeplanerHist") || "null");
+    if (hs && Array.isArray(hs.entries)) {
+      H.entries = hs.entries; H.lastBackup = hs.lastBackup || 0;
+      if (hs.pendings && typeof hs.pendings === "object") H.pendings = hs.pendings;
+      else if (hs.pending) H.pendings[P.active] = hs.pending;
+    }
+  } catch (e) {}
+  // Ladungen ohne Profil-Zuordnung (aus der Zeit vor den Profilen) gehören zum aktuellen Profil
+  H.entries.forEach(function (e) { if (e.pid === undefined) e.pid = P.active || ""; });
+  function saveH() { try { localStorage.setItem("ebikeLadeplanerHist", JSON.stringify(H)); } catch (e) {} }
+  function pct(v) { var n = parseFloat(String(v).replace(",", ".")); return (isFinite(n) && n >= 0 && n <= 100) ? n : null; }
+  function nameOf(list, id) { for (var i = 0; i < list.length; i++) if (list[i][0] === id) return list[i][1]; return id; }
+  var STAGES = { sommer: "Sommer", uebergang: "Übergang", winter: "Winter", frost: "Frost" };
+  function tempVal() {
+    var t = parseFloat(String(S.temp).replace(/[\u2212\u2013\u2012]/g, "-").replace(",", ".").trim());
+    return (isFinite(t) && t >= -60 && t <= 70) ? t : null;
+  }
+  function stageOf(t) { return (typeof t !== "number" || !isFinite(t)) ? "" : t >= 15 ? "sommer" : t >= 5 ? "uebergang" : t >= 0 ? "winter" : "frost"; }
+  function curStage() { return stageOf(tempVal()); }
+  function entryGroup(e) { return typeof e.temp === "number" ? stageOf(e.temp) : ""; }
+  function keyFor(b, c, cap, pow, st) {
+    var k = b + "|" + c + (st ? "|" + st : "");
+    if (b === "custom") k += "|" + cap;
+    if (c === "custom") k += "|" + pow;
+    return k;
+  }
+  function comboKey() { return keyFor(S.batt, S.chg, S.cap, S.pow, curStage()); }
+  // Mittel der letzten 5 Ladungen dieser Kombination aus Akku und Ladegerät
+  function factorFor(key) {
+    var list = H.entries.filter(function (e) { return keyFor(e.battId, e.chgId, e.cap, e.pow, entryGroup(e)) === key && e.sample > 0; }).slice(-5);
+    if (!list.length) return { f: 1, n: 0 };
+    var sum = 0; list.forEach(function (e) { sum += e.sample; });
+    return { f: sum / list.length, n: list.length };
+  }
+  function fmtF(f) { return "×" + dc(f.toFixed(2)); }
+  // ---- Lernmodell: Korrektur aus Temperatur und Ladebereich (kleinste Quadrate)
+  function solveLS(rows, ys) {
+    var k = rows[0].length, A = [], i, j, r;
+    for (i = 0; i < k; i++) { A.push([]); for (j = 0; j <= k; j++) A[i].push(0); }
+    rows.forEach(function (x, n) { for (i = 0; i < k; i++) { for (j = 0; j < k; j++) A[i][j] += x[i] * x[j]; A[i][k] += x[i] * ys[n]; } });
+    for (i = 0; i < k; i++) {
+      var m = i; for (r = i + 1; r < k; r++) if (Math.abs(A[r][i]) > Math.abs(A[m][i])) m = r;
+      if (Math.abs(A[m][i]) < 1e-9) return null;
+      var t = A[i]; A[i] = A[m]; A[m] = t;
+      for (r = 0; r < k; r++) if (r !== i) { var q = A[r][i] / A[i][i]; for (j = i; j <= k; j++) A[r][j] -= q * A[i][j]; }
+    }
+    var out = []; for (i = 0; i < k; i++) out.push(A[i][k] / A[i][i]);
+    for (i = 0; i < k; i++) if (!isFinite(out[i])) return null;
+    return out;
+  }
+  function comboEntries() {
+    var key = keyFor(S.batt, S.chg, S.cap, S.pow, "");
+    return H.entries.filter(function (e) { return (e.pid || "") === (P.active || "") && keyFor(e.battId, e.chgId, e.cap, e.pow, "") === key && e.sample > 0 && e.to > e.from; });
+  }
+  var MIN_T = 10, MIN_U = 3, W_MIN = 0.3;
+  // Zwei Faktoren: unterer Bereich (0 bis 80 %) und oberer Bereich (80 bis 100 %). Jede Ladung speist den Bereich, den sie berührt.
+  function lowOf(e) {
+    var g = (Math.min(e.to, TAPER_AT) - e.from) / 100;
+    if (!(g > 0)) return null;
+    if (typeof e.sL === "number") return (e.sL > 0 && e.wL >= W_MIN) ? { s: e.sL, g: g, temp: e.temp } : null;
+    return e.sample > 0 ? { s: e.sample, g: g, temp: e.temp } : null;   // ältere Ladungen: nur unterer Bereich
+  }
+  function highOf(e) { return (typeof e.sU === "number" && e.sU > 0 && e.wU >= W_MIN) ? e.sU : null; }
+  // liefert { fL, fU, n, nU, mode: "temp" | "ohne" | "mittel", uMode: "mess" | "annahme" }
+  function predictFactor(from, to) {
+    var combo = comboEntries(), t = tempVal();
+    var all = combo.map(lowOf).filter(function (x) { return x; });
+    var gL = Math.max(0, Math.min(to, TAPER_AT) - from) / 100;
+    var res = { fL: 1, fU: 1, n: all.length, nU: 0, mode: "mittel", uMode: "annahme" };
+    function clamp(v, list) {
+      var mn = Infinity, mx = -Infinity; list.forEach(function (e) { mn = Math.min(mn, e.s); mx = Math.max(mx, e.s); });
+      return Math.max(mn * 0.8, Math.min(mx * 1.2, v));
+    }
+    var done = false;
+    var wtAll = all.filter(function (e) { return typeof e.temp === "number"; });
+    if (t !== null) {
+      if (wtAll.length >= MIN_T) {
+        var tmin = Infinity, tmax = -Infinity; wtAll.forEach(function (e) { tmin = Math.min(tmin, e.temp); tmax = Math.max(tmax, e.temp); });
+        if (tmax - tmin >= 8 && t >= tmin - 3 && t <= tmax + 3) {
+          var c = solveLS(wtAll.map(function (e) { return [1, e.temp, e.g]; }), wtAll.map(function (e) { return e.s; }));
+          if (c) { var v = clamp(c[0] + c[1] * t + c[2] * gL, wtAll); if (v > 0) { res.fL = v; res.n = wtAll.length; res.mode = "temp"; done = true; } }
+        }
+      }
+    } else if (wtAll.length >= MIN_T) {
+      var c2 = solveLS(all.map(function (e) { return [1, e.g]; }), all.map(function (e) { return e.s; }));
+      if (c2) { var v2 = clamp(c2[0] + c2[1] * gL, all); if (v2 > 0) { res.fL = v2; res.mode = "ohne"; done = true; } }
+    }
+    if (!done && all.length) { var sm = 0; all.forEach(function (e) { sm += e.s; }); res.fL = sm / all.length; }
+    var hi = combo.map(highOf).filter(function (x) { return x; });
+    res.nU = hi.length;
+    if (hi.length >= MIN_U) { var su = 0; hi.forEach(function (x) { su += x; }); res.fU = su / hi.length; res.uMode = "mess"; }
+    res.f = res.fL;
+    return res;
+  }
+  function modelText(fc, from, to) {
+    var out = [], pl = function (n, one, many) { return n + " " + (n === 1 ? one : many); };
+    if (from < TAPER_AT) {
+      if (!fc.n) out.push(L("Bis 80 %: noch keine Korrektur, sie entsteht nach der ersten gespeicherten Ladung.", "Up to 80 %: no correction yet, it appears after the first saved charge."));
+      else if (fc.mode === "temp") out.push(L("Bis 80 %: Korrektur " + fmtF(fc.fL) + " aus dem Lernmodell mit Temperatur und Ladebereich (" + fc.n + " Ladungen mit Temperatur).", "Up to 80 %: correction " + fmtF(fc.fL) + " from the learning model with temperature and charge range (" + fc.n + " charges with temperature)."));
+      else if (fc.mode === "ohne") out.push(L("Bis 80 %: Korrektur " + fmtF(fc.fL) + " aus dem Lernmodell ohne Temperatur, nur nach Ladebereich (" + fc.n + " Ladungen, davon mindestens " + MIN_T + " mit Temperatur). Etwas ungenauer als mit Temperatur.", "Up to 80 %: correction " + fmtF(fc.fL) + " from the learning model without temperature, by charge range only (" + fc.n + " charges, at least " + MIN_T + " of them with temperature). Slightly less exact than with temperature."));
+      else out.push(L("Bis 80 %: Korrektur " + fmtF(fc.fL) + " als Durchschnitt aus " + fc.n + (fc.n === 1 ? " gespeicherter Ladung" : " gespeicherten Ladungen") + " mit diesem Akku und Ladegerät. Das Lernmodell startet ab " + MIN_T + " Ladungen mit Temperatur (über mindestens 8 °C Spanne).", "Up to 80 %: correction " + fmtF(fc.fL) + " as the average of " + pl(fc.n, "saved charge", "saved charges") + " with this battery and charger. The learning model starts from " + MIN_T + " charges with temperature (spanning at least 8 °C)."));
+    }
+    if (to > TAPER_AT) {
+      if (fc.uMode === "mess") out.push(L("Ab 80 %: Korrektur " + fmtF(fc.fU) + " als Durchschnitt aus " + fc.nU + " Ladungen über 80 %.", "Above 80 %: correction " + fmtF(fc.fU) + " as the average of " + fc.nU + " charges above 80 %."));
+      else out.push(L("Ab 80 %: noch keine verlässliche Korrektur, die Seite nimmt " + fmtF(1) + " an. Sie braucht dafür " + MIN_U + " Ladungen über 80 % (bisher " + fc.nU + "). Lade ab und zu von 80 auf 100 %, dann lernt sie diesen Bereich.", "Above 80 %: no reliable correction yet, the page assumes " + fmtF(1) + ". It needs " + MIN_U + " charges above 80 % for this (so far " + fc.nU + "). Charge from 80 to 100 % now and then so it learns this range."));
+    }
+    return out.join(" ");
+  }
+  // Diagramm: Temperatur gegen gelernten Faktor
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function svgEl(n, a, txt) { var e = document.createElementNS(SVGNS, n); for (var k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; return e; }
+  function renderChart() {
+    var box = $("lcBox"), note = $("lcNote");
+    while (box.firstChild) box.removeChild(box.firstChild);
+    var lows = comboEntries().map(lowOf).filter(function (x) { return x; });
+    var pts = lows.filter(function (e) { return typeof e.temp === "number"; });
+    var nt = lows.length - pts.length;
+    if (!S.batt || !S.chg) { note.textContent = T("Wähle erst Akku und Ladegerät."); return; }
+    if (pts.length < 3) {
+      note.textContent = L("Für das Diagramm braucht es mindestens 3 gespeicherte Ladungen mit Temperatur für diesen Akku und dieses Ladegerät (aktuell " + pts.length + ")." + (nt ? " Dazu " + nt + " ohne Temperatur." : ""), "The chart needs at least 3 saved charges with temperature for this battery and this charger (currently " + pts.length + ")." + (nt ? " Plus " + nt + " without temperature." : ""));
+      return;
+    }
+    var W = 320, Hh = 190, ML = 38, R = 24, MT = 10, B = 28;
+    var xs = pts.map(function (e) { return e.temp; }), ys = pts.map(function (e) { return e.s; });
+    var tc = tempVal(); if (tc !== null) xs = xs.concat([tc]);
+    var x0 = Math.floor(Math.min.apply(null, xs) - 1), x1 = Math.ceil(Math.max.apply(null, xs) + 1); if (x1 - x0 < 6) x1 = x0 + 6;
+    var y0 = Math.min.apply(null, ys), y1 = Math.max.apply(null, ys), pad = Math.max(0.05, (y1 - y0) * 0.15); y0 -= pad; y1 += pad;
+    function px(x) { return ML + (x - x0) / (x1 - x0) * (W - ML - R); }
+    function py(y) { return MT + (1 - (y - y0) / (y1 - y0)) * (Hh - MT - B); }
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + Hh, width: "100%", role: "img", "aria-label": L("Diagramm: Temperatur gegen gelernten Faktor", "Chart: temperature against learned factor") });
+    svg.style.maxWidth = "420px";
+    var i, v;
+    for (i = 0; i <= 3; i++) { v = y0 + (y1 - y0) * i / 3; svg.appendChild(svgEl("line", { x1: ML, x2: W - R, y1: py(v), y2: py(v), stroke: "var(--line)", "stroke-width": 1 })); svg.appendChild(svgEl("text", { x: ML - 4, y: py(v) + 3, "text-anchor": "end", "font-size": 10, fill: "var(--muted)" }, dc(v.toFixed(2)))); }
+    var step = (x1 - x0) > 30 ? 10 : (x1 - x0) > 12 ? 5 : 2;
+    for (v = Math.ceil(x0 / step) * step; v <= x1; v += step) svg.appendChild(svgEl("text", { x: px(v), y: Hh - 12, "text-anchor": "middle", "font-size": 10, fill: "var(--muted)" }, v + " °C"));
+    // Trend: Modell bei typischem Ladebereich oder einfache Gerade
+    var meanG = 0; pts.forEach(function (e) { meanG += e.g; }); meanG /= pts.length;
+    var co = pts.length >= MIN_T ? solveLS(pts.map(function (e) { return [1, e.temp, e.g]; }), ys) : null;
+    var f2 = function (x) { return co ? co[0] + co[1] * x + co[2] * meanG : null; };
+    if (!co) { var c2 = solveLS(pts.map(function (e) { return [1, e.temp]; }), ys); if (c2) f2 = function (x) { return c2[0] + c2[1] * x; }; else f2 = null; }
+    if (f2) {
+      var ya = f2(x0), yb = f2(x1);
+      svg.appendChild(svgEl("line", { x1: px(x0), y1: py(Math.max(y0, Math.min(y1, ya))), x2: px(x1), y2: py(Math.max(y0, Math.min(y1, yb))), stroke: "var(--accent)", "stroke-width": 2 }));
+    }
+    if (tc !== null) svg.appendChild(svgEl("line", { x1: px(tc), x2: px(tc), y1: MT, y2: Hh - B, stroke: "var(--warn)", "stroke-width": 1.5, "stroke-dasharray": "4 3" }));
+    pts.forEach(function (e) { svg.appendChild(svgEl("circle", { cx: px(e.temp), cy: py(e.s), r: 3.5, fill: "var(--ink)", "fill-opacity": 0.55 })); });
+    box.appendChild(svg);
+    note.textContent = L(pts.length + " Ladungen mit Temperatur. Punkte: je eine gespeicherte Ladung, Linie: " + (co ? "Trend des Lernmodells bei durchschnittlichem Ladebereich" : "einfache Trendlinie (das Lernmodell startet ab " + MIN_T + " Ladungen)") + (tc !== null ? ", gestrichelt: aktuelle Temperatur" : "") + ". Höher heißt: der Akku lädt langsamer als berechnet." + (nt ? " " + nt + " Ladungen ohne Temperatur sind hier nicht eingezeichnet." : ""), pts.length + " charges with temperature. Dots: one saved charge each, line: " + (co ? "trend of the learning model at an average charge range" : "simple trend line (the learning model starts from " + MIN_T + " charges)") + (tc !== null ? ", dashed: current temperature" : "") + ". Higher means: the battery charges more slowly than calculated." + (nt ? " " + nt + " charges without temperature are not drawn here." : ""));
+  }
+
+  function fmtEnergy(wh) {
+    return wh >= 1000
+      ? (wh / 1000).toLocaleString(LOC(), { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " kWh"
+      : Math.round(wh) + " Wh";
+  }
+  function fmtDate(t) { return new Date(t).toLocaleDateString(LOC(), { day: "2-digit", month: "2-digit", year: "numeric" }); }
+  function fmtDT(t) {
+    var d = new Date(t);
+    return d.toLocaleDateString(LOC(), { day: "2-digit", month: "2-digit" }) + ", " +
+           d.toLocaleTimeString(LOC(), { hour: "2-digit", minute: "2-digit" });
+  }
+  function delivered(e) { return e.measuredWh > 0 ? e.measuredWh : e.estWall; }
+
+  function fill(sel, list) {
+    list.forEach(function (it) { var o = document.createElement("option"); o.value = it[0]; o.textContent = T(it[1]); sel.appendChild(o); });
+  }
+  function buildSelects() {
+    [["batt", BATTERIES], ["chg", CHARGERS]].forEach(function (x) {
+      var el = $(x[0]), cur = el.value;
+      while (el.firstChild) el.removeChild(el.firstChild);
+      var o = document.createElement("option"); o.value = ""; o.textContent = T("Wählen …"); el.appendChild(o);
+      fill(el, x[1]); el.value = cur;
+    });
+  }
+  buildSelects();
+
+  function num(v) { var n = parseFloat(String(v).replace(",", ".")); return isFinite(n) ? n : 0; }
+  function fmt(n) { return Math.round(n).toLocaleString(LOC()); }
+  function dur(sec) { var h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60); if (m === 60) { h++; m = 0; } return h > 0 ? h + " h " + (m < 10 ? "0" : "") + m + " min" : m + " min"; }
+
+  function durS(sec) {
+    sec = Math.max(0, Math.ceil(sec));
+    var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60, p = function (n) { return (n < 10 ? "0" : "") + n; };
+    return h > 0 ? h + " h " + p(m) + " min" : m > 0 ? m + " min " + p(s) + " s" : s + " s";
+  }
+  var onLink = "";
+  function pendingActive() { var pd = H.pending; return !!(pd && pd.endAt && offOf(pd) > Date.now()); }
+  // Batterieschutz: Timer-Ladung auf 100 %, damit das Balancing des Akkus laufen kann
+  function bsHours() {
+    if (!S.chg) return 0;
+    if (S.chg === "std2") return 13;
+    if (S.chg === "fast4") return 8;
+    if (S.chg === "pow6" || S.chg === "c12") return 6;
+    return S.pow > 0 ? (S.pow <= 100 ? 13 : S.pow <= 200 ? 8 : 6) : 0;
+  }
+  function bsDue() { return S.bs > 0 && S.chg !== "" && bsHours() > 0 && S.cnt >= S.bs; }
+  function bsRun() { var pd = H.pending; return !!(pd && pd.bs && pd.endAt && offOf(pd) > Date.now()); }
+  function btnText() { return pendingActive() ? T("Ladevorgang abbrechen") : bsDue() ? T("Batterieschutz 100 % starten") : T("Ladevorgang starten"); }
+  function offOf(pd) { return pd.offAt || pd.endAt; }
+  function idleLabel() { return S.mode === "timer" ? T("Abschalt-Timer") : T("Voraussichtliche Zeit (nach Verbrauch)"); }
+  function runningPend() {
+    var pd = H.pending;
+    return pd && pd.endAt && pd.battId === S.batt && pd.chgId === S.chg && (pd.bs || (pd.from === S.cur && pd.to === S.tgt)) && offOf(pd) > Date.now() ? pd : null;
+  }
+  function tickTime() {
+    var pd = runningPend();
+    if (!pd) return;
+    $("dur").textContent = durS((offOf(pd) - Date.now()) / 1000); fitTime();
+  }
+
+  function calc() {
+    var fc = predictFactor(S.cur, S.tgt);
+    var r = estimateTwo(S.cap, S.pow, S.cur, S.tgt, fc.fL, fc.fU);
+    if (r) { r.f = r.bat / ((S.tgt - S.cur) / 100 * S.cap); r.n = fc.n; r.fc = fc; }
+    return r;
+  }
+
+  function estimateTwo(cap, p, from, to, fL, fU) {
+    if (!(to > from) || cap <= 0 || p <= 0) return null;
+    var fast = Math.max(0, Math.min(to, TAPER_AT) - from) / 100 * cap * fL;
+    var slow = Math.max(0, to - Math.max(from, TAPER_AT)) / 100 * cap * fU;
+    var hours = fast / p + slow / (p * TAPER_FACTOR);
+    var bat = fast + slow;
+    var eff = Math.min(100, Math.max(50, S.eff)) / 100;
+    var sec = Math.round(hours * 3600);
+    var timer = sec;
+    return { bat: bat, wall: bat / eff, sec: sec, timer: timer };
+  }
+
+  function tasCmd(host, cmd) { return "http://" + host + "/cm?cmnd=" + encodeURIComponent(cmd); }
+
+  function ipHost() {
+    if (S.net === "ap") return S.plug === "tasmota" ? "192.168.4.1" : "192.168.33.1";
+    return S.ip.replace(/^https?:\/\//i, "").replace(/\/.*$/, "").trim();
+  }
+
+  function setLink(el, url) {
+    if (url) { el.href = url; el.removeAttribute("aria-disabled"); }
+    else { el.href = "#"; el.setAttribute("aria-disabled", "true"); }
+  }
+
+  // Die Zeit bleibt immer in einer Zeile: Schrift verkleinern, falls nötig
+  function fitTime() {
+    var d = $("dur"), row = document.querySelector(".toprow"), bt = row.querySelector(".btns"), fs = 34;
+    var avail = row.clientWidth - bt.offsetWidth - 12;
+    d.style.fontSize = "";
+    while (d.scrollWidth > avail && fs > 14) { fs--; d.style.fontSize = fs + "px"; }
+  }
+
+  function render() {
+    var run = null, pd0 = H.pending;
+    if (pd0 && pd0.bs && pd0.endAt && offOf(pd0) <= Date.now()) { H.pending = null; saveH(); pd0 = null; }
+    if (pd0 && !pd0.bs && pd0.endAt && pd0.battId === S.batt && pd0.chgId === S.chg && pd0.from === S.cur && pd0.to === S.tgt) {
+      var span = (pd0.sec > 0 ? pd0.sec * 1000 : (pd0.endAt - pd0.t)) || 1;
+      var fr = Math.min(1, Math.max(0, (Date.now() - pd0.t) / span));
+      run = { frac: fr, now: S.cur + (S.tgt - S.cur) * fr };
+    }
+    var gn = run ? run.now : S.cur;
+    if (run) {
+      $("gHave").style.width = S.cur + "%";
+      $("gAdd").style.left = S.cur + "%"; $("gAdd").style.width = Math.max(0, gn - S.cur) + "%";
+      $("gNow").hidden = false;
+      $("gNow").textContent = run.frac >= 1 ? T("Ziel erreicht (geschätzt nach Zeitplan)") : L("Jetzt ca. " + Math.round(gn) + " % (geschätzt nach Zeitplan)", "Now approx. " + Math.round(gn) + " % (estimated by schedule)");
+    } else {
+      $("gHave").style.width = S.cur + "%";
+      $("gAdd").style.left = S.cur + "%"; $("gAdd").style.width = Math.max(0, S.tgt - S.cur) + "%";
+      $("gNow").hidden = true;
+    }
+    $("gTgt").style.left = S.tgt + "%";
+
+    var r = calc(), msg = $("msg");
+    var host = ipHost();
+    if (r) {
+      var rp = runningPend();
+      $("dur").textContent = rp ? durS((offOf(rp) - Date.now()) / 1000) : dur(S.mode === "timer" ? r.timer : r.sec);
+      $("dlabel").textContent = rp ? ((rp.mode ? rp.mode === "script" : (rp.offAt && rp.offAt < rp.endAt)) ? T("Voraussichtliche Zeit (nach Verbrauch)") : T("Restzeit bis zum Abschalt-Timer")) : idleLabel();
+      var hm = function (t) { return new Date(t).toLocaleTimeString(LOC(), { hour: "2-digit", minute: "2-digit" }); };
+      var pd = H.pending;
+      if (pd && pd.endAt && pd.battId === S.batt && pd.chgId === S.chg && pd.from === S.cur && pd.to === S.tgt) {
+        var left = offOf(pd) - Date.now(), late = pd.offAt && pd.offAt < pd.endAt ? L(" · spätestens " + hm(pd.endAt) + " Uhr (Timer)", " · at the latest " + hm(pd.endAt) + " (timer)") : "";
+        $("fin").textContent = left > 0
+          ? L("gestartet " + hm(pd.t) + " Uhr · fertig gegen " + hm(offOf(pd)) + " Uhr", "started " + hm(pd.t) + " · done around " + hm(offOf(pd))) + late
+          : L("gestartet " + hm(pd.t) + " Uhr · Abschaltzeit " + hm(offOf(pd)) + " Uhr erreicht, die Ladung sollte fertig sein", "started " + hm(pd.t) + " · shutoff time " + hm(offOf(pd)) + " reached, the charge should be done") + late;
+      } else if (S.mode === "timer") {
+        $("fin").textContent = L("fertig gegen " + hm(Date.now() + r.timer * 1000) + " Uhr", "done around " + hm(Date.now() + r.timer * 1000));
+      } else {
+        $("fin").textContent = L("fertig gegen " + hm(Date.now() + r.sec * 1000) + " Uhr", "done around " + hm(Date.now() + r.sec * 1000));
+      }
+      var effCap = S.cap * r.f;
+      $("sNow").textContent = "ca. " + fmt(effCap * gn / 100) + " Wh";
+      $("sAfter").textContent = "ca. " + fmt(effCap * S.tgt / 100) + " Wh";
+      $("sBat").textContent = "+" + fmt(r.bat) + " Wh";
+      $("sWall").textContent = fmt(r.wall) + " Wh";
+      $("corrNote").textContent = modelText(r.fc, S.cur, S.tgt);
+      msg.hidden = true;
+      var on = "";
+      onLink = "";
+      if (host) {
+        if (S.plug === "tasmota") {
+          var ptTimer = Math.min(64900, Math.max(112, r.timer + 100));
+          if (S.mode === "timer") on = tasCmd(host, "Backlog PulseTime " + ptTimer + "; Power On");
+          else on = tasCmd(host, "Backlog EnergyToday 0; Mem1 " + (r.wall / 1000).toFixed(3) + "; PulseTime 0; Power On");
+        } else if (S.mode === "timer") on = "http://" + host + "/rpc/Switch.Set?id=0&on=true&toggle_after=" + r.timer;
+        else on = "http://" + host + "/script/" + (S.sid || 1) + "/ebike?cap=" + Math.round(S.cap * r.f) + "&pow=" + Math.round(S.pow) + "&from=" + S.cur + "&to=" + S.tgt;
+      }
+      onLink = on;
+      $("urlOn").textContent = on || T("Erst die IP-Adresse eintragen.");
+    } else {
+      $("dlabel").textContent = idleLabel(); $("dur").textContent = "–"; $("fin").textContent = ""; $("sBat").textContent = "–"; $("sNow").textContent = "–"; $("sAfter").textContent = "–"; $("sWall").textContent = "–";
+      msg.hidden = false; msg.textContent = !(S.cap > 0 && S.pow > 0) ? T("Erst Akku und Ladegerät wählen (unter „Akku & Ladegerät“).") : T("Das Ziel muss über dem aktuellen Ladestand liegen."); $("corrNote").textContent = "";
+      onLink = "";
+      $("urlOn").textContent = T("Erst Akku, Ladegerät, Ziel und IP-Adresse prüfen.");
+    }
+    var tas = S.plug === "tasmota";
+    var bsOn = bsRun() || (bsDue() && !pendingActive());
+    if (bsOn) {
+      var bsSec = bsHours() * 3600, bp = bsRun() ? H.pending : null, hm2 = function (t) { return new Date(t).toLocaleTimeString(LOC(), { hour: "2-digit", minute: "2-digit" }); };
+      $("dur").textContent = bp ? durS((offOf(bp) - Date.now()) / 1000) : dur(bsSec);
+      $("dlabel").textContent = bp ? T("Batterieschutz: Restzeit bis zum Abschalt-Timer") : T("Batterieschutz-Timer (auf 100 %)");
+      $("fin").textContent = bp ? L("gestartet " + hm2(bp.t) + " Uhr · fertig gegen " + hm2(offOf(bp)) + " Uhr", "started " + hm2(bp.t) + " · done around " + hm2(offOf(bp))) : L("fertig gegen " + hm2(Date.now() + bsSec * 1000) + " Uhr", "done around " + hm2(Date.now() + bsSec * 1000));
+      msg.hidden = true;
+      onLink = !host ? "" : tas ? tasCmd(host, "Backlog PulseTime " + Math.min(64900, bsSec + 100) + "; Power On") : "http://" + host + "/rpc/Switch.Set?id=0&on=true&toggle_after=" + bsSec;
+      $("urlOn").textContent = onLink || T("Erst die IP-Adresse eintragen.");
+    }
+    $("ipHint").hidden = !!host;
+    var offLink = !host ? "" : tas ? tasCmd(host, "Backlog PulseTime 5500; Mem1 99999; Power Off") : "http://" + host + "/rpc/Switch.Set?id=0&on=false";
+    var runNow = pendingActive();
+    $("startHint").hidden = runNow;
+    setLink($("btnOn"), runNow ? offLink : onLink);
+    $("btnOn").textContent = btnText();
+    $("btnOn").className = "btn " + (runNow ? "off" : "go");
+    fitTime();
+    setLink($("btnStat"), !host ? "" : tas ? tasCmd(host, "Status 8") : "http://" + host + "/rpc/Switch.GetStatus?id=0");
+    $("modeNote").textContent = S.mode === "timer"
+      ? T("Schaltet ein und nach der berechneten Zeit wieder aus. Keine Einrichtung nötig, die Abschaltung ist aber ungenauer.") + (tas ? "" : T(" Mit dem Shelly-Skript wird dieser Timer nicht auf 90 Minuten gekürzt, sofern die Steckdose ihn meldet. Sonst „Nach Verbrauch“ nehmen."))
+      : tas
+        ? T("Schaltet ein, setzt die Energiegrenze und schaltet den Timer ab. Die Regel auf der Steckdose schaltet bei erreichter Energiemenge ab (Einrichtung siehe README).")
+        : T("Schaltet ein und schickt Akku, Ladegerät und Ladestand an das Skript auf der Steckdose. Es schaltet bei erreichter Energiemenge ab oder wenn das Ladegerät keinen Strom mehr zieht. Eine Zeitgrenze gibt es nicht.");
+    $("mScript").nextElementSibling.textContent = T("Nach Verbrauch");
+    $("sid").closest("details").hidden = tas;
+    $("chgHint").hidden = S.chg !== "c12";
+    var stg = curStage(), tv = tempVal();
+    $("tempNote").textContent = (stg === "" && String(S.temp).trim() ? T("Die Eingabe ist keine gültige Temperatur. ") : "") + T("Die Temperatur trägt die Seite beim Öffnen selbst ein (nur mit Internet und Standortfreigabe, nicht im WLAN der Steckdose). Du kannst sie überschreiben. Sie wird beim Start mit der Ladung gespeichert, daraus lernt die Seite, wie die Temperatur die Ladezeit beeinflusst. Ohne Temperatur rechnet sie nur nach dem Ladebereich.");
+    var tw = $("tempWarn");
+    tw.hidden = !(tv !== null && (tv < 0 || tv > 40));
+    tw.textContent = tw.hidden ? "" : T("⚠ Außerhalb von 0 bis 40 °C sollte der Akku nicht geladen werden.");
+    $("bsNote").textContent = T("Akkus gleichen ihre Zellen beim Laden auf 100 % aus (Balancing). Trage ein, nach wie vielen Ladestarts das nötig ist. Voreingestellt sind 10. Leer oder 0 schaltet es aus. Die Seite zählt die Ladestarts dieses Profils (auch abgebrochene). Ist die Zahl erreicht, heißt der Knopf „Batterieschutz 100 % starten“ und startet immer einen Timer, egal welcher Abschaltmodus gewählt ist: Charger 2 A 13 Stunden, 4 A 8 Stunden, 6 A und 12 A 6 Stunden. Die Zahl wird mit dem Profil gesichert, der Zählerstand nicht. Eine Batterieschutz-Ladung wird nicht im Verlauf gespeichert und nicht fürs Lernen genutzt.") + (S.bs > 0 ? L(" Aktueller Stand: " + (S.cnt || 0) + " von " + S.bs + ".", " Current count: " + (S.cnt || 0) + " of " + S.bs + ".") : "");
+    var bn = S.batt ? nameOf(BATTERIES, S.batt) : "", cn = S.chg ? nameOf(CHARGERS, S.chg) : "";
+    $("devSum").textContent = (bn || cn)
+      ? (bn ? T(bn) : T("Akku fehlt")) + (bn && S.cap > 0 ? " · " + fmt(S.cap) + " Wh" : "") + " · " + (cn ? T(cn) : T("Ladegerät fehlt")) + (cn && S.pow > 0 ? " · " + fmt(S.pow) + " W" : "")
+      : T("bitte wählen");
+    var hostS = ipHost();
+    $("plugSum").textContent = (activeProf() ? activeProf().name + " · " : "") + (tas ? "Tasmota" : "Shelly") + " · " + (S.net === "ap" ? "WLAN der Steckdose" : (hostS || T("IP fehlt"))) + " · " + (S.mode === "timer" ? T("Nach Timer") : T("Nach Verbrauch"));
+    var ap = S.net === "ap";
+    $("ip").parentNode.hidden = ap;
+    $("netNote").textContent = ap
+      ? T("Die Links nutzen die feste Adresse 192.168.33.1 der Steckdose. Dein Handy muss mit dem WLAN der Steckdose verbunden sein.")
+      : T("Die Steckdose und dein Handy sind im selben Heim-WLAN. Statt der IP-Adresse kannst du auch den Gerätenamen der Steckdose eintragen, zum Beispiel shellyplugsg3-XXXXXX.local. Das klappt nicht auf jedem Handy.");
+    renderAfter();
+    renderHist();
+    wlSync();
+  }
+
+  function applyBattery(id) {
+    var b = BATTERIES.filter(function (x) { return x[0] === id; })[0];
+    S.batt = id; if (id === "") S.cap = 0; else if (b && id !== "custom") S.cap = b[2];
+    if (S.chg === "c12") S.pow = POW12[id] || (id ? 500 : 0);
+    $("batt").value = id; $("cap").value = S.cap || ""; $("pow").value = S.pow || "";
+  }
+  function applyCharger(id) {
+    var c = CHARGERS.filter(function (x) { return x[0] === id; })[0];
+    S.chg = id; if (id === "") S.pow = 0; else if (c && id !== "custom") S.pow = id === "c12" ? (POW12[S.batt] || (S.batt ? 500 : 0)) : c[2];
+    $("chg").value = id; $("pow").value = S.pow || "";
+  }
+
+  $("batt").addEventListener("change", function (e) { applyBattery(e.target.value); save(); render(); if (S.batt && S.chg) $("devDet").open = false; });
+  $("chg").addEventListener("change", function (e) { applyCharger(e.target.value); save(); render(); if (S.batt && S.chg) $("devDet").open = false; });
+  $("cap").addEventListener("input", function (e) { S.cap = num(e.target.value); S.batt = "custom"; $("batt").value = "custom"; save(); render(); });
+  $("pow").addEventListener("input", function (e) { S.pow = num(e.target.value); S.chg = "custom"; $("chg").value = "custom"; save(); render(); });
+  function cl(v) { return Math.min(100, Math.max(0, Math.round(num(v)))); }
+  $("cur").addEventListener("input", function (e) { S.cur = cl(e.target.value); save(); render(); });
+  $("tgt").addEventListener("input", function (e) { S.tgt = cl(e.target.value); save(); render(); });
+  ["cur", "tgt"].forEach(function (id) { $(id).addEventListener("change", function () { $(id).value = S[id]; }); });
+  $("eff").addEventListener("input", function (e) { S.eff = num(e.target.value); save(); render(); });
+  $("ip").addEventListener("input", function (e) { S.ip = e.target.value; save(); render(); });
+  $("ip").addEventListener("change", function () { if (ipHost()) $("plugDet").open = false; });
+  $("temp").addEventListener("keydown", function (e) { if (/^[eE+]$/.test(e.key)) e.preventDefault(); });
+  $("temp").addEventListener("input", function (e) { S.temp = e.target.value; if (OUT.st !== "idle") { OUT.st = "idle"; renderOutdoor(); } save(); render(); });
+  $("sid").addEventListener("input", function (e) { S.sid = Math.max(1, Math.round(num(e.target.value))); save(); render(); });
+  ["pShelly", "pTasmota"].forEach(function (id) {
+    $(id).addEventListener("change", function (e) { S.plug = e.target.value; save(); render(); });
+  });
+  ["nHome", "nAp"].forEach(function (id) {
+    $(id).addEventListener("change", function (e) { S.net = e.target.value; save(); render(); if (S.net === "ap") $("plugDet").open = false; });
+  });
+  ["mScript", "mTimer"].forEach(function (id) {
+    $(id).addEventListener("change", function (e) { S.mode = e.target.value; save(); render(); });
+  });
+
+  ["btnOn", "btnStat"].forEach(function (id) {
+    $(id).addEventListener("click", function (e) { if (this.getAttribute("aria-disabled") === "true") { e.preventDefault(); } });
+  });
+
+  $("copy").addEventListener("click", function () {
+    var t = $("urlOn").textContent, b = this;
+    function done() { b.textContent = T("Kopiert"); setTimeout(function () { b.textContent = T("Link kopieren"); }, 1500); }
+    try { navigator.clipboard.writeText(t).then(done, function () { selectText(); }); } catch (e) { selectText(); }
+    function selectText() { var r = document.createRange(); r.selectNodeContents($("urlOn")); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+  });
+
+  // Anfangswerte setzen (auch beim Wechsel des Profils)
+  function applyStateToUI() {
+    // gespeicherte eigene Werte nicht durch den Katalog überschreiben
+    var capK = S.cap, powK = S.pow;
+    applyBattery(S.batt); applyCharger(S.chg);
+    S.cap = capK || S.cap; S.pow = powK || S.pow;
+    $("cap").value = S.cap || ""; $("pow").value = S.pow || "";
+    $("cur").value = S.cur; $("tgt").value = S.tgt; $("eff").value = S.eff; $("ip").value = S.ip; $("temp").value = String(S.temp || "").replace(",", ".");
+    $("sid").value = S.sid; $("mScript").checked = S.mode !== "timer"; $("mTimer").checked = S.mode === "timer";
+    $("nHome").checked = S.net !== "ap"; $("nAp").checked = S.net === "ap";
+    $("pShelly").checked = S.plug !== "tasmota"; $("pTasmota").checked = S.plug === "tasmota";
+    $("bs").value = S.bs > 0 ? S.bs : "";
+    $("devDet").open = !(S.batt && S.chg);
+    $("plugDet").open = !(S.net === "ap" || S.ip.trim());
+  }
+  // ---- Profile
+  function renderProf(force) {
+    var sel = $("profSel");
+    while (sel.firstChild) sel.removeChild(sel.firstChild);
+    if (!P.list.length) { var o0 = document.createElement("option"); o0.value = ""; o0.textContent = T("Kein Profil"); sel.appendChild(o0); }
+    P.list.forEach(function (pr) { var o = document.createElement("option"); o.value = pr.id; o.textContent = pr.name; sel.appendChild(o); });
+    if (P.list.length) { var oe = document.createElement("option"); oe.value = "__edit"; oe.textContent = T("Profil bearbeiten …"); sel.appendChild(oe); var od = document.createElement("option"); od.value = "__del"; od.textContent = T("Profil löschen …"); sel.appendChild(od); }
+    var on = document.createElement("option"); on.value = "__new"; on.textContent = T("+ Profil hinzufügen"); sel.appendChild(on);
+    sel.value = P.list.length ? P.active : "";
+    var a = activeProf();
+    if (!a) closePanel();
+    if (a) { if (force || $("profName") !== document.activeElement) $("profName").value = a.name;
+      $("profNote").textContent = T("Jedes Profil ist eine Steckdose mit einem Akku und einem Ladegerät. Beim Wechseln des Profils wechseln auch Akku, Ladegerät, Ladestand und Einstellungen. Gelöscht wird nur das Profil, die gespeicherten Ladungen bleiben im Verlauf."); }
+  }
+  function switchProf(id) {
+    save(); saveH();
+    P.active = id; var a = activeProf();
+    if (a) { PF.forEach(function (k) { if (k in a) S[k] = a[k]; }); S.cnt = a.cnt || 0; }
+    $("reached").value = ""; $("saveMsg").textContent = "";
+    applyStateToUI(); save(); renderProf(true); render();
+  }
+  // Alles zum Profil auf einmal: Akku & Ladegerät und Steckdose öffnen, zum Namen springen
+  function panelOpen() { return !$("profPanel").hidden; }
+  function openPanel() {
+    $("profPanel").hidden = false;
+  }
+  function closePanel() {
+    if (!panelOpen()) return;
+    $("profPanel").hidden = true;
+  }
+  $("profDone").addEventListener("click", function () { closePanel(); window.scrollTo(0, 0); });
+  function editProf(del) {
+    openPanel();
+    setTimeout(function () { var nm = del ? $("profDel") : $("profName"); if (del && !delArmed) nm.click(); try { nm.scrollIntoView({ block: "center" }); nm.focus(); if (!del) nm.select(); } catch (e) {} }, 50);
+  }
+  function newProfile() {
+    save();
+    var n = 1, names = {}; P.list.forEach(function (x) { names[x.name] = true; });
+    while (names[T("Steckdose") + " " + n]) n++;
+    var pr = { id: "p" + Date.now(), name: T("Steckdose") + " " + n, cnt: 0 };
+    var first = !P.list.length;
+    if (first) H.entries.forEach(function (e) { if (!e.pid) e.pid = pr.id; });
+    if (first) { PF.forEach(function (k) { pr[k] = S[k]; }); pr.cnt = S.cnt || 0; }
+    else { pr.plug = "shelly"; pr.ip = ""; pr.net = "home"; pr.sid = 1; pr.mode = "script"; pr.batt = ""; pr.chg = ""; pr.cap = 0; pr.pow = 0; pr.eff = 85; pr.cur = 20; pr.tgt = 60; pr.bs = 10; }
+    P.list.push(pr); P.active = pr.id;
+    PF.forEach(function (k) { S[k] = pr[k]; }); S.cnt = pr.cnt;
+    applyStateToUI(); save(); renderProf(true); render(); editProf();
+  }
+  $("profSel").addEventListener("change", function (e) {
+    var v = e.target.value;
+    if (v === "__new") newProfile(); else if (v === "__edit") { renderProf(); editProf(); } else if (v === "__del") { renderProf(); editProf(true); } else if (v && v !== P.active) switchProf(v); else renderProf();
+  });
+  $("profName").addEventListener("input", function (e) {
+    var a = activeProf(); if (!a) return;
+    a.name = e.target.value.slice(0, 30) || T("Steckdose"); save(); renderProf(); render();
+  });
+  var delArmed = false, delT = null;
+  $("profDel").addEventListener("click", function () {
+    var b = this;
+    if (!delArmed) { delArmed = true; b.textContent = T("Wirklich löschen?"); b.className = "btn danger"; clearTimeout(delT); delT = setTimeout(function () { delArmed = false; b.textContent = T("Profil löschen"); b.className = "btn ghost"; }, 3000); return; }
+    delArmed = false; clearTimeout(delT); b.textContent = T("Profil löschen"); b.className = "btn ghost";
+    var id = P.active;
+    P.list = P.list.filter(function (x) { return x.id !== id; });
+    delete H.pendings[id];
+    H.entries.forEach(function (x) { if (x.pid === id) { x.pid = ""; } });
+    var nxt = P.list[0];
+    if (nxt) { P.active = nxt.id; PF.forEach(function (k) { if (k in nxt) S[k] = nxt[k]; }); S.cnt = nxt.cnt || 0; }
+    else { P.active = ""; }
+    applyStateToUI(); save(); saveH(); closePanel(); renderProf(); render(); window.scrollTo(0, 0);
+  });
+  $("bs").addEventListener("input", function (e) { S.bs = Math.max(0, Math.min(99, Math.round(num(e.target.value)))); save(); render(); });
+  applyStateToUI(); renderProf();
+  // ---- Außentemperatur per Standort (beim Öffnen, wenn das Feld leer ist; Open-Meteo)
+  var OUT = { st: "idle", val: null, why: "", att: 0 }, outBusy = false, outTimer = null;
+  var OUT_TRIES = 3;
+  function outText() {
+    if (OUT.st === "search") return OUT.att > 1 ? L("Neuer Versuch (" + OUT.att + " von " + OUT_TRIES + ") …", "Trying again (" + OUT.att + " of " + OUT_TRIES + ") …") : L("Außentemperatur wird gesucht …", "Looking for the outdoor temperature …");
+    if (OUT.st === "ok") return L("Außentemperatur an deinem Standort: " + dc(OUT.val) + " °C. Überschreibe sie, wenn dein Akku woanders lädt.", "Outdoor temperature at your location: " + dc(OUT.val) + " °C. Overwrite it if your battery charges elsewhere.");
+    var why = { denied: L("Kein Standort freigegeben.", "No location permission given."), slow: L("Standort nicht gefunden oder zu langsam.", "Location not found or too slow."),
+      offline: L("Kein Internet.", "No internet."), service: L("Wetterdienst nicht erreichbar.", "Weather service not reachable."), unsupported: L("Standort ist hier nicht verfügbar.", "Location is not available here.") }[OUT.why] || "";
+    return why + L(" Trage die Temperatur von Hand ein.", " Enter the temperature by hand.");
+  }
+  function renderOutdoor() {
+    var note = $("autoNote");
+    while (note.firstChild) note.removeChild(note.firstChild);
+    if (OUT.st === "idle" || (OUT.st === "fail" && $("temp").value.trim() !== "")) { note.hidden = true; return; }
+    note.hidden = false;
+    if (OUT.st === "search") { var sp = document.createElement("span"); sp.className = "spin"; sp.setAttribute("aria-hidden", "true"); note.appendChild(sp); }
+    note.appendChild(document.createTextNode(outText()));
+  }
+  $("temp").addEventListener("input", function () { renderOutdoor(); });
+  function outFail(why, retry) {
+    clearTimeout(outTimer);
+    if (retry && OUT.att < OUT_TRIES) {
+      OUT.st = "search"; OUT.att++; renderOutdoor();
+      outTimer = setTimeout(outTry, OUT.att === 2 ? 3000 : 6000);
+      return;
+    }
+    outBusy = false; OUT.st = "fail"; OUT.why = why; renderOutdoor();
+  }
+  function outTry() {
+    if (tempVal() !== null) { outBusy = false; OUT.st = "idle"; renderOutdoor(); return; }
+    if (!navigator.geolocation || typeof fetch !== "function") { outFail("unsupported", false); return; }
+    if (navigator.onLine === false) { outFail("offline", false); return; }
+    var settled = false;
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      if (settled) return; settled = true;
+      var ctl = (typeof AbortController === "function") ? new AbortController() : null, to = setTimeout(function () { if (ctl) ctl.abort(); }, 10000);
+      fetch("https://api.open-meteo.com/v1/forecast?latitude=" + pos.coords.latitude.toFixed(2) + "&longitude=" + pos.coords.longitude.toFixed(2) + "&current=temperature_2m", ctl ? { signal: ctl.signal } : {})
+        .then(function (r) { if (!r.ok) throw new Error("http"); return r.json(); })
+        .then(function (j) {
+          clearTimeout(to);
+          var out = j && j.current && j.current.temperature_2m;
+          if (typeof out !== "number") throw new Error("none");
+          outBusy = false;
+          if (tempVal() !== null) { OUT.st = "idle"; renderOutdoor(); return; }   // inzwischen von Hand eingetragen
+          out = Math.round(out * 10) / 10;
+          S.temp = String(out); $("temp").value = S.temp; save();
+          OUT.st = "ok"; OUT.val = out; renderOutdoor();
+          render();
+        })
+        .catch(function () { clearTimeout(to); outFail("service", true); });
+    }, function (err) {
+      if (settled) return; settled = true;
+      if (err && err.code === 1) outFail("denied", false); else outFail("slow", true);
+    }, { timeout: 20000, maximumAge: 600000 });
+  }
+  // startet die Suche, wenn das Feld leer ist und keine läuft
+  function getOutdoor() {
+    if (outBusy || tempVal() !== null) return;
+    outBusy = true; OUT.st = "search"; OUT.att = 1; OUT.why = ""; renderOutdoor();
+    outTry();
+  }
+  // neuer Versuch bei Rückkehr in die Seite oder wenn das Internet wieder da ist (nicht nach verweigertem Standort)
+  function retryOutdoor() { if (!outBusy && tempVal() === null && !(OUT.st === "fail" && OUT.why === "denied")) getOutdoor(); }
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") retryOutdoor(); });
+  window.addEventListener("pageshow", function (e) { if (e.persisted) retryOutdoor(); });
+  window.addEventListener("online", retryOutdoor);
+  var DRAFT_IDS = ["reached"];
+  try { var dr = JSON.parse(localStorage.getItem("ebikeLadeplanerDraft") || "null"); if (dr) DRAFT_IDS.forEach(function (i) { if (typeof dr[i] === "string") $(i).value = dr[i]; }); } catch (e) {}
+  render();
+  if (tempVal() === null) getOutdoor();
+  function updateChip() {
+    var on = navigator.onLine !== false;
+    $("chip").className = on ? "chip" : "chip off";
+    $("chipT").textContent = on
+      ? T("Seite geladen, rechnet auch ohne Internet.")
+      : T("Kein Internet, die Seite rechnet weiter.");
+  }
+  window.addEventListener("online", updateChip);
+  window.addEventListener("offline", updateChip);
+  updateChip();
+  function saveDraft() { try { var d = {}; DRAFT_IDS.forEach(function (i) { d[i] = $(i).value; }); localStorage.setItem("ebikeLadeplanerDraft", JSON.stringify(d)); } catch (e) {} }
+  function clearDraft() { try { localStorage.removeItem("ebikeLadeplanerDraft"); } catch (e) {} }
+  DRAFT_IDS.forEach(function (i) { $(i).addEventListener("input", saveDraft); });
+  function updateRemind() {
+    var p = H.pending, el = $("doneRemind");
+    var show = !!(p && !p.bs && p.endAt && offOf(p) <= Date.now());
+    if (show) { var tt = new Date(offOf(p)).toLocaleTimeString(LOC(), { hour: "2-digit", minute: "2-digit" }); $("doneTxt").textContent = L("Ladung " + p.from + " → " + p.to + " % fertig seit " + tt + " Uhr", "Charge " + p.from + " → " + p.to + " % done since " + tt); $("doneSub").textContent = L("noch nicht im Verlauf gespeichert", "not saved to the history yet"); }
+    el.hidden = !show;
+  }
+  // Fenster „Ladung eintragen“, „Ladestand ändern“ und die Rückfrage bei weit unter dem Ziel
+  var dlgArm = false, dlgT = null, dlg = { mode: "enter", id: null, sure: false, via: "done", sub: "", to: 0 };
+  var sureOK = false, lastAsk = false, savedOK = false;
+  function dlgDropReset() { dlgArm = false; clearTimeout(dlgT); var d = $("dlgDrop"); d.textContent = T("Ladung verwerfen"); d.classList.remove("armed"); }
+  function dlgClose() { $("dlgOv").hidden = true; dlgDropReset(); dlg.sure = false; $("dlgIn").readOnly = false; }
+  function dlgShow() {
+    var v = pct($("dlgIn").value), ed = dlg.mode === "edit";
+    $("dlgTitle").textContent = dlg.sure ? L("Wirklich " + dc(v) + " % speichern?", "Really save " + dc(v) + " %?") : (ed ? T("Ladestand ändern") : T("Ladung eintragen"));
+    $("dlgSub").textContent = dlg.sure ? L("Das liegt weit unter dem Ziel von " + dc(dlg.to) + " %.", "That is far below the target of " + dc(dlg.to) + " %.") : dlg.sub;
+    $("dlgCancel").textContent = dlg.sure ? T("Nein, ändern") : T("Abbrechen");
+    $("dlgSave").textContent = dlg.sure ? T("Ja, speichern") : T("Speichern");
+    var drop = dlg.mode === "enter" && dlg.via === "done" && !dlg.sure;
+    $("dlgDrop").style.display = drop ? "" : "none"; document.querySelector("#dlgOv .sep").style.display = drop ? "" : "none";
+    dlgDropReset();
+  }
+  function dlgFocus() { setTimeout(function () { try { $("dlgIn").focus(); $("dlgIn").select(); } catch (e) {} }, 50); }
+  function dlgOpen() {
+    var p = H.pending; if (!p || p.bs) return;
+    dlg = { mode: "enter", id: null, sure: false, via: "done", sub: $("doneTxt").textContent, to: p.to };
+    $("dlgIn").readOnly = false; $("dlgIn").value = p.to; $("dlgErr").textContent = "";
+    dlgShow(); $("dlgOv").hidden = false; dlgFocus();
+  }
+  function dlgEditOpen(e) {
+    var dd = new Date(e.t).toLocaleDateString(LOC(), { day: "2-digit", month: "2-digit" });
+    dlg = { mode: "edit", id: e.id, sure: false, via: "edit", sub: dd + ": " + e.from + " → " + e.to + " % · " + T(e.battName), to: e.to };
+    $("dlgIn").readOnly = false; $("dlgIn").value = e.reached; $("dlgErr").textContent = "";
+    dlgShow(); $("dlgOv").hidden = false; dlgFocus();
+  }
+  // Rückfrage: der eingetragene Wert liegt mehr als 20 Prozentpunkte unter dem Ziel
+  function askSure(v, to) {
+    if ($("dlgOv").hidden) dlg = { mode: "enter", id: null, sure: false, via: "bottom", sub: "", to: to };
+    dlg.sure = true; dlg.to = to;
+    $("dlgIn").value = v; $("dlgIn").readOnly = true; $("dlgErr").textContent = "";
+    dlgShow(); $("dlgOv").hidden = false;
+  }
+  // Ladestand eines Verlaufseintrags ändern (nur der erreichte Wert, Start, Ziel und Temperatur bleiben)
+  function editEntry(id, val, sure) {
+    var e = H.entries.filter(function (x) { return x.id === id; })[0];
+    if (!e) return { err: T("Eintrag nicht gefunden.") };
+    var v = pct(val);
+    if (v === null) return { err: T("Bitte den erreichten Ladestand (0 bis 100 %) eintragen.") };
+    if (!(v > e.from)) return { err: T("Der erreichte Ladestand muss über dem Start liegen.") };
+    if (!sure && v < e.to - 20) return { ask: true, v: v, to: e.to };
+    var er = applyReached(e, v);
+    if (er) return { err: er };
+    saveH(); persistStatus(false); render();
+    return { ok: true };
+  }
+  function topNote(t) {
+    var r = $("bkTopMsg"); r.querySelector(".tx").textContent = t; r.hidden = false;
+    clearTimeout(topT); topT = setTimeout(function () { r.hidden = true; }, 8000);
+  }
+  $("doneGo").addEventListener("click", function () { $("afDet").open = true; });
+  $("doneGo").addEventListener("click", dlgOpen);
+  $("dlgCancel").addEventListener("click", function () {
+    if (dlg.sure) {
+      dlg.sure = false; $("dlgIn").readOnly = false;
+      if (dlg.via === "bottom") { dlgClose(); try { $("reached").focus(); } catch (e) {} return; }
+      dlgShow(); dlgFocus(); return;
+    }
+    dlgClose();
+  });
+  $("dlgOv").addEventListener("click", function (e) { if (e.target === this) dlgClose(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("dlgOv").hidden) dlgClose(); });
+  $("dlgIn").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); $("dlgSave").click(); } });
+  $("dlgSave").addEventListener("click", function () {
+    if (dlg.mode === "edit") {
+      var r = editEntry(dlg.id, $("dlgIn").value, dlg.sure);
+      if (r.err) { $("dlgErr").textContent = r.err; return; }
+      if (r.ask) { askSure(r.v, r.to); return; }
+      dlgClose(); topNote(L("Ladestand geändert.", "Charge level changed."));
+      return;
+    }
+    $("reached").value = $("dlgIn").value;
+    if (dlg.sure) sureOK = true;
+    lastAsk = false; savedOK = false;
+    $("saveRun").click();
+    sureOK = false;
+    if (lastAsk) return;
+    var m = $("saveMsg").textContent;
+    if (savedOK) { var via = dlg.via; dlgClose(); if (m && via !== "bottom") topNote(m); }
+    else $("dlgErr").textContent = m;
+  });
+  $("dlgDrop").addEventListener("click", function () {
+    var d = $("dlgDrop");
+    if (!dlgArm) { dlgArm = true; d.textContent = T("Wirklich verwerfen?"); d.classList.add("armed"); clearTimeout(dlgT); dlgT = setTimeout(dlgDropReset, 3000); return; }
+    $("dropPend").click(); dlgClose();
+  });
+  function renderAfter() {
+    updateRemind();
+    var p = H.pending;
+    $("dropPend").hidden = !p || !!p.bs;
+    if (p && p.bs) {
+      $("pendNote").textContent = L("Batterieschutz-Ladung läuft seit " + fmtDT(p.t) + " (" + p.battName + " · " + p.chgName + "). Sie wird nicht im Verlauf gespeichert und nicht fürs Lernen genutzt.", "Battery-protection charge running since " + fmtDT(p.t) + " (" + T(p.battName) + " · " + T(p.chgName) + "). It is not saved to the history and not used for learning.");
+    } else if (p) {
+      $("pendNote").textContent = L("Gestartet am ", "Started on ") + fmtDT(p.t) + ": " + p.from + " → " + p.to + " % (" + T(p.battName) + " · " + T(p.chgName) + (typeof p.temp === "number" ? " · " + dc(p.temp) + " °C" : "") + ").";
+    } else {
+      $("pendNote").textContent = "";
+    }
+    $("pendNote").hidden = !$("pendNote").textContent;
+    var wait = false, sum;
+    if (p && p.bs) sum = L("Batterieschutz-Ladung läuft", "Battery-protection charge running");
+    else if (p) {
+      wait = !p.endAt || offOf(p) <= Date.now();
+      sum = L("Ladung " + p.from + " → " + p.to + " %" + (wait ? " wartet auf Eintrag" : " läuft"), "Charge " + p.from + " → " + p.to + " %" + (wait ? " waits for entry" : " running"));
+    } else sum = L("Keine Ladung gemerkt", "No charge remembered");
+    $("afSum").textContent = sum;
+    if (wait) { if (afOpened !== String(p.t)) { afOpened = String(p.t); $("afDet").open = true; } } else afOpened = "";
+  }
+  var afOpened = "";
+
+  // Bildschirm anlassen, solange die Uhr läuft und die Seite sichtbar ist (Ablehnung wird still hingenommen)
+  var wl = null, wlBusy = false;
+  function wlSync() {
+    try {
+      var want = !!runningPend() && document.visibilityState === "visible";
+      if (want && !wl && !wlBusy && navigator.wakeLock && navigator.wakeLock.request) {
+        wlBusy = true;
+        navigator.wakeLock.request("screen").then(function (s) {
+          wlBusy = false; wl = s;
+          s.addEventListener("release", function () { if (wl === s) wl = null; });
+          if (!(runningPend() && document.visibilityState === "visible")) { wl = null; s.release().catch(function () {}); }
+        }, function () { wlBusy = false; });
+      } else if (!want && wl) { var s0 = wl; wl = null; s0.release().catch(function () {}); }
+    } catch (err) { wlBusy = false; }
+  }
+  document.addEventListener("visibilitychange", wlSync);
+
+  var armedId = null, armedTimer = null;
+  function renderHist() {
+    var list = H.entries.filter(function (e) { return (e.pid || "") === (P.active || ""); }), sum = 0;
+    list.forEach(function (e) { sum += delivered(e); });
+    $("hTotal").textContent = list.length ? fmtEnergy(sum) : "–";
+    $("hCount").textContent = list.length ? String(list.length) : "–";
+    $("hAvg").textContent = list.length ? fmtEnergy(sum / list.length) : "–";
+    if (typeof bkStatus === "function" && $("bkLast")) bkStatus();
+    renderChart();
+    $("hNote").textContent = list.length ? "" : T("Noch keine Ladung gespeichert.");
+    var ul = $("hList");
+    while (ul.firstChild) ul.removeChild(ul.firstChild);
+    list.slice().reverse().forEach(function (e) {
+      var li = document.createElement("li");
+      var a = document.createElement("div"); a.className = "l1"; a.textContent = fmtDate(e.t);
+      var b = document.createElement("div"); b.className = "l2"; b.textContent = (e.pname ? e.pname + " · " : "") + T(e.battName) + " · " + T(e.chgName) + (typeof e.temp === "number" ? " · " + dc(e.temp) + " °C" : "");
+      var c = document.createElement("div"); c.className = "l3";
+      c.textContent = e.from + " → " + e.reached + " % (" + L("Ziel ", "target ") + e.to + " %) · " + fmtEnergy(delivered(e));
+      var btn = document.createElement("button"); btn.type = "button";
+      btn.textContent = armedId === e.id ? T("Wirklich?") : T("Löschen");
+      if (armedId === e.id) btn.className = "sure";
+      btn.addEventListener("click", function () {
+        if (armedId === e.id) {
+          H.entries = H.entries.filter(function (x) { return x.id !== e.id; });
+          armedId = null; saveH(); render();
+        } else {
+          armedId = e.id; renderHist();
+          clearTimeout(armedTimer);
+          armedTimer = setTimeout(function () { armedId = null; renderHist(); }, 3000);
+        }
+      });
+      var chb = document.createElement("button"); chb.type = "button"; chb.textContent = T("Ändern");
+      chb.addEventListener("click", function () { dlgEditOpen(e); });
+      var act = document.createElement("div"); act.className = "act"; act.appendChild(chb); act.appendChild(btn);
+      li.appendChild(a); li.appendChild(b); li.appendChild(c); li.appendChild(act);
+      ul.appendChild(li);
+    });
+  }
+
+  // Öffnet den Schaltbefehl kurz in einem neuen Tab und schließt ihn nach kurzer Zeit wieder
+  function openPlug(url) {
+    var w = null;
+    try { w = window.open(url, "_blank"); } catch (err) { w = null; }
+    if (w) { setTimeout(function () { try { w.close(); } catch (err) {} }, 2000); return; }
+    var a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  }
+  $("btnOn").addEventListener("click", function (ev) {
+    ev.preventDefault();
+    if (this.getAttribute("aria-disabled") === "true") return;
+    var url = this.href;
+    if (pendingActive()) {
+      openPlug(url);
+      H.pending = null; saveH(); $("reached").value = ""; clearDraft(); $("saveMsg").textContent = "";
+      renderAfter(); render();
+      return;
+    }
+    if (bsDue()) {
+      var bsec = bsHours() * 3600, now0 = Date.now();
+      openPlug(url);
+      H.pending = { bs: true, t: now0, key: "bs", battId: S.batt, chgId: S.chg, battName: nameOf(BATTERIES, S.batt), chgName: nameOf(CHARGERS, S.chg),
+        cap: S.cap, pow: S.pow, from: 0, to: 100, sec: bsec, endAt: now0 + bsec * 1000, offAt: now0 + bsec * 1000, mode: "timer" };
+      S.cnt = 0; save(); saveH(); renderAfter(); render();
+      return;
+    }
+    var r = calc(); if (!r) return;
+    openPlug(url);
+    S.cnt = (S.cnt || 0) + 1; save();
+    H.pending = {
+      t: Date.now(), key: comboKey(), battId: S.batt, chgId: S.chg,
+      battName: nameOf(BATTERIES, S.batt), chgName: nameOf(CHARGERS, S.chg),
+      cap: S.cap, pow: S.pow, from: S.cur, to: S.tgt, fUsed: r.f, fL: r.fc.fL, fU: r.fc.fU, estWall: r.wall, estBat: r.bat, sec: r.sec, endAt: Date.now() + r.sec * 1000, offAt: Date.now() + r.sec * 1000, mode: S.mode, season: curStage(), temp: tempVal()
+    };
+    saveH(); renderAfter(); render();
+  });
+
+  $("dropPend").addEventListener("click", function () { H.pending = null; saveH(); $("saveMsg").textContent = ""; renderAfter(); });
+
+  function applyReached(e, reached) {
+    var gainPlan = e.to - e.from, gainAct = reached - e.from;
+    if (!(gainAct > 0)) return T("Der erreichte Ladestand muss über dem Start liegen.");
+    var sample = e.fUsed * (gainPlan / gainAct);
+    if (!(sample > 0) || !isFinite(sample)) return T("Mit diesen Werten lässt sich keine Korrektur berechnen.");
+    var fL0 = e.fL > 0 ? e.fL : e.fUsed, fU0 = e.fU > 0 ? e.fU : e.fUsed;
+    var tLo = function (x, y) { return Math.max(0, Math.min(y, TAPER_AT) - x); }, tHi = function (x, y) { return Math.max(0, y - Math.max(x, TAPER_AT)) / TAPER_FACTOR; };
+    var Tplan = tLo(e.from, e.to) * fL0 + tHi(e.from, e.to) * fU0, Tact = tLo(e.from, reached) * fL0 + tHi(e.from, reached) * fU0;
+    if (!(Tplan > 0) || !(Tact > 0)) return T("Mit diesen Werten lässt sich keine Korrektur berechnen.");
+    var kk = Tplan / Tact;
+    e.fL = fL0; e.fU = fU0; e.sL = fL0 * kk; e.sU = fU0 * kk;
+    e.wL = tLo(e.from, e.to) * fL0 / Tplan; e.wU = tHi(e.from, e.to) * fU0 / Tplan;
+    e.reached = reached; e.sample = sample;
+    return "";
+  }
+  $("saveRun").addEventListener("click", function () {
+    var msg = $("saveMsg"), p = H.pending, e;
+    var reached = pct($("reached").value);
+    if (reached === null) { msg.textContent = T("Bitte den erreichten Ladestand (0 bis 100 %) eintragen."); return; }
+    if (p && p.bs) { msg.textContent = T("Eine Batterieschutz-Ladung wird nicht gespeichert. Sie läuft von selbst aus."); return; }
+    var tgt0 = p ? p.to : S.tgt, from0 = p ? p.from : S.cur;
+    if (!sureOK && reached > from0 && reached < tgt0 - 20) { lastAsk = true; askSure(reached, tgt0); return; }
+    sureOK = false;
+    if (p) {
+      e = { key: p.key, battId: p.battId, chgId: p.chgId, battName: p.battName, chgName: p.chgName,
+            cap: p.cap, pow: p.pow, from: p.from, to: p.to, fUsed: p.fUsed, fL: p.fL, fU: p.fU, estWall: p.estWall, estBat: p.estBat };
+    } else {
+      var from = S.cur, to = S.tgt;
+      if (!(to > from)) { msg.textContent = T("Bitte oben „Aktuell“ und „Laden bis“ prüfen: Das Ziel muss über dem Ladestand liegen."); return; }
+      var fc = predictFactor(from, to);
+      var est = estimateTwo(S.cap, S.pow, from, to, fc.fL, fc.fU);
+      if (!est) { msg.textContent = T("Mit diesen Werten lässt sich nichts berechnen."); return; }
+      e = { key: comboKey(), battId: S.batt, chgId: S.chg, battName: nameOf(BATTERIES, S.batt), chgName: nameOf(CHARGERS, S.chg),
+            cap: S.cap, pow: S.pow, from: from, to: to, fUsed: est.bat / ((to - from) / 100 * S.cap), fL: fc.fL, fU: fc.fU, estWall: est.wall, estBat: est.bat };
+    }
+    e.temp = p ? (typeof p.temp === "number" ? p.temp : null) : tempVal();
+    e.season = stageOf(e.temp);
+    e.key = keyFor(e.battId, e.chgId, e.cap, e.pow, e.season);
+    var er = applyReached(e, reached);
+    if (er) { msg.textContent = er; return; }
+    var ap0 = activeProf(); e.pid = ap0 ? ap0.id : ""; e.pname = ap0 ? ap0.name : "";
+    e.id = Date.now(); e.t = p ? p.t : Date.now(); e.measuredWh = null;
+    H.entries.push(e); H.pending = null; saveH(); savedOK = true;
+    $("reached").value = ""; clearDraft();
+    persistStatus(true); bkStatus();
+    var fcNew = predictFactor(S.cur, S.tgt);
+    msg.textContent = "Gespeichert. " + modelText(fcNew, e.from, e.to);
+    render();
+  });
+
+  function cleanEntry(x) {
+    if (!x || typeof x !== "object") return null;
+    var n = function (v) { v = Number(v); return isFinite(v) ? v : null; };
+    var o = { id: n(x.id), t: n(x.t), from: n(x.from), to: n(x.to), reached: n(x.reached), estWall: n(x.estWall), estBat: n(x.estBat),
+              fUsed: n(x.fUsed), sample: n(x.sample), fL: n(x.fL), fU: n(x.fU), sL: n(x.sL), sU: n(x.sU), wL: n(x.wL), wU: n(x.wU), cap: n(x.cap), pow: n(x.pow), measuredWh: n(x.measuredWh) };
+    if (o.id === null || o.t === null || o.from === null || o.to === null || o.reached === null || o.estWall === null || o.sample === null) return null;
+    o.key = String(x.key || "").slice(0, 80);
+    o.battId = String(x.battId || "").slice(0, 40); o.chgId = String(x.chgId || "").slice(0, 40);
+    o.battName = String(x.battName || "").slice(0, 60); o.chgName = String(x.chgName || "").slice(0, 60);
+    o.pid = String(x.pid || "").slice(0, 40); o.pname = String(x.pname || "").slice(0, 30);
+    o.season = STAGES[x.season] ? String(x.season) : ""; o.temp = (x.temp === null || x.temp === undefined || x.temp === "") ? null : n(x.temp);
+    if (!(o.measuredWh > 0)) o.measuredWh = null;
+    if (!(o.sL > 0 && o.sU > 0 && o.wL !== null && o.wU !== null)) { delete o.fL; delete o.fU; delete o.sL; delete o.sU; delete o.wL; delete o.wU; }
+    return o;
+  }
+
+  function cleanProf(x) {
+    if (!x || typeof x !== "object") return null;
+    var n = function (v, d) { v = Number(v); return isFinite(v) ? v : d; };
+    var o = { id: String(x.id || "").slice(0, 40), name: String(x.name || T("Steckdose")).slice(0, 30), cnt: 0 };
+    o.plug = x.plug === "tasmota" ? "tasmota" : "shelly"; o.ip = String(x.ip || "").slice(0, 80); o.net = x.net === "ap" ? "ap" : "home";
+    o.sid = Math.max(1, Math.round(n(x.sid, 1))); o.mode = x.mode === "timer" ? "timer" : "script";
+    o.batt = String(x.batt || "").slice(0, 40); o.chg = String(x.chg || "").slice(0, 40);
+    o.cap = Math.max(0, n(x.cap, 0)); o.pow = Math.max(0, n(x.pow, 0)); o.eff = Math.min(100, Math.max(50, n(x.eff, 85)));
+    o.cur = Math.min(100, Math.max(0, Math.round(n(x.cur, 20)))); o.tgt = Math.min(100, Math.max(0, Math.round(n(x.tgt, 60))));
+    o.bs = Math.min(99, Math.max(0, Math.round(n(x.bs, 0))));
+    return o;
+  }
+  function restoreText(text) {
+    var msg = $("bkMsg"), d, arr;
+    try { d = JSON.parse(text); arr = Array.isArray(d) ? d : d.entries; } catch (err) { arr = null; }
+    if (!Array.isArray(arr)) { msg.textContent = T("Das ist keine gültige Sicherung."); return; }
+    save();
+    // Profile zusammenführen: gleicher Name und gleiche IP = dasselbe Profil, die Werte aus der Datei gelten
+    var idMap = {}, profNew = 0, profUp = 0;
+    if (Array.isArray(d.profiles)) d.profiles.forEach(function (x) {
+      var c = cleanProf(x); if (!c) return;
+      var hit = P.list.filter(function (q) { return q.name === c.name && String(q.ip).trim() === c.ip.trim(); })[0];
+      if (hit) { PF.forEach(function (k) { hit[k] = c[k]; }); profUp++; if (c.id) idMap[c.id] = hit.id; }
+      else { var nid = "p" + Date.now() + "_" + P.list.length; c.id = nid; if (x.id) idMap[String(x.id).slice(0, 40)] = nid; P.list.push(c); profNew++; }
+    });
+    var have = {}; H.entries.forEach(function (x) { have[x.id] = x; });
+    var added = 0, moved = 0, toActive = !Array.isArray(d.profiles);
+    arr.forEach(function (x) {
+      var c = cleanEntry(x); if (!c) return;
+      if (have[c.id]) {   // schon vorhanden: bei Zuordnung zum gewählten Profil wird die Zuordnung überschrieben
+        if (toActive && P.active && have[c.id].pid !== P.active) { have[c.id].pid = P.active; have[c.id].pname = (activeProf() || {}).name || ""; moved++; }
+        return;
+      }
+      if (toActive) { c.pid = P.active || ""; c.pname = (activeProf() || {}).name || ""; }
+      else if (c.pid) c.pid = idMap[c.pid] || "";
+      H.entries.push(c); have[c.id] = c; added++;
+    });
+    H.entries.sort(function (a, b) { return a.t - b.t; });
+    var a0 = activeProf(), takeMsg = "";
+    if (toActive && arr.length) {   // altes Profil-loses Format: leeres Profil übernimmt Akku und Ladegerät der jüngsten Ladung
+      var lastE = null; arr.forEach(function (x) { var c = cleanEntry(x); if (c && (!lastE || c.t > lastE.t)) lastE = c; });
+      var tg = a0 || S;
+      if (lastE && lastE.battId && lastE.chgId && !tg.batt && !tg.chg) {
+        tg.batt = lastE.battId; tg.chg = lastE.chgId; if (lastE.cap > 0) tg.cap = lastE.cap; if (lastE.pow > 0) tg.pow = lastE.pow;
+        takeMsg = L(" Akku und Ladegerät aus der Datei übernommen.", " Battery and charger taken over from the file.");
+      }
+    }
+    var movedMsg = moved ? L(" " + moved + " vorhandene Ladungen dem gewählten Profil zugeordnet.", " " + moved + " existing charges assigned to the selected profile.") : "";
+    if (!a0 && P.list.length) { P.active = P.list[0].id; a0 = P.list[0]; }
+    if (a0) { PF.forEach(function (k) { if (k in a0) S[k] = a0[k]; }); S.cnt = a0.cnt || 0; }
+    applyStateToUI(); save(); saveH(); renderProf(); render();
+    msg.textContent = L(added + (added === 1 ? " Ladung ergänzt" : " Ladungen ergänzt") + (Array.isArray(d.profiles) ? ", " + profNew + (profNew === 1 ? " Profil neu" : " Profile neu") + ", " + profUp + (profUp === 1 ? " Profil aktualisiert." : " Profile aktualisiert.") : "."), added + (added === 1 ? " charge added" : " charges added") + (Array.isArray(d.profiles) ? ", " + profNew + (profNew === 1 ? " new profile" : " new profiles") + ", " + profUp + (profUp === 1 ? " profile updated." : " profiles updated.") : "."));
+    msg.textContent += movedMsg + takeMsg;
+  }
+
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+  function bkStatus() {
+    var n = H.entries.filter(function (e) { return e.t > (H.lastBackup || 0); }).length;
+    var bl = $("bkLast");
+    bl.textContent = (H.lastBackup ? L("Zuletzt gesichert: ", "Last backup: ") + fmtDT(H.lastBackup) : L("Noch nie gesichert", "Never backed up")) +
+      (n > 0 ? L(" · " + n + (n === 1 ? " Ladung offen" : " Ladungen offen"), " · " + n + (n === 1 ? " charge open" : " charges open")) : "");
+    bl.className = n > 0 ? "msg" : "note";
+    var top = $("bkTop");
+    if (n >= 3) {
+      var sub = H.lastBackup ? L("seit der letzten Sicherung am " + fmtDT(H.lastBackup), "since the last backup on " + fmtDT(H.lastBackup)) : L("noch nie als Datei gesichert", "never backed up as a file");
+      var cnt = L(n + (n === 1 ? " Ladung" : " Ladungen") + " nicht gesichert", n + (n === 1 ? " charge" : " charges") + " not backed up");
+      top.hidden = false; $("bkTopTxt").textContent = cnt; $("bkTopSub").textContent = sub;
+    } else { top.hidden = true; }
+  }
+  function persistStatus(askNow) {
+    // bittet den Browser einmal um dauerhaften Speicher; eine Anzeige dazu gibt es nicht mehr
+    try {
+      if (askNow && navigator.storage && navigator.storage.persisted && navigator.storage.persist)
+        navigator.storage.persisted().then(function (ok) { if (!ok) navigator.storage.persist().catch(function () {}); }, function () {});
+    } catch (err) {}
+  }
+
+  $("bkTopGo").addEventListener("click", function () {
+    // bleibt oben: die Rückmeldung erscheint in der Karte statt unten bei „Sicherung“
+    topAsk = true; $("bkFile").click();
+  });
+  var topAsk = false, topT = null;
+  if (typeof MutationObserver === "function") new MutationObserver(function () {
+    var t = $("bkMsg").textContent;
+    if (!topAsk || !t) return;
+    topAsk = false;
+    var r = $("bkTopMsg"); r.querySelector(".tx").textContent = t; r.hidden = false;
+    clearTimeout(topT); topT = setTimeout(function () { r.hidden = true; }, 8000);
+  }).observe($("bkMsg"), { childList: true, characterData: true, subtree: true });
+  function markBackedUp(text) { H.lastBackup = Date.now(); saveH(); bkStatus(); $("bkMsg").textContent = text; }
+
+  $("bkFile").addEventListener("click", function () {
+    var msg = $("bkMsg");
+    var json = JSON.stringify({ version: 2, entries: H.entries, profiles: P.list.map(function (pr) { var o = { id: pr.id, name: pr.name }; PF.forEach(function (k) { o[k] = pr[k]; }); return o; }) });
+    var d = new Date();
+    var name = "ebike-verlauf-" + d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate()) + ".json";
+
+    function viaDownload() {
+      if (window.navigator.standalone === true) {
+        msg.textContent = T("In der Home-Bildschirm-App erlaubt das iPhone keine Downloads. Öffne die Seite im Browser und sichere dort.");
+        return;
+      }
+      try {
+        var url = URL.createObjectURL(new Blob([json], { type: "application/json" }));
+        var a = document.createElement("a"); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+        markBackedUp(L("Gesichert als " + name + ". Schau in deinen Downloads oder in Dateien nach.", "Backed up as " + name + ". Look in your Downloads or in Files."));
+      } catch (err) {
+        msg.textContent = T("Die Datei konnte nicht erzeugt werden.");
+      }
+    }
+
+    function legacy() {
+      var file = null;
+      try { file = new File([json], name, { type: "application/json" }); } catch (err) {}
+      if (file && navigator.canShare && navigator.share) {
+        var ok = false;
+        try { ok = navigator.canShare({ files: [file] }); } catch (err) {}
+        if (ok) {
+          navigator.share({ files: [file] }).then(
+            function () { markBackedUp(L("Gesichert als " + name + ".", "Backed up as " + name + ".")); },
+            function (err) {
+              if (err && err.name === "AbortError") msg.textContent = T("Abgebrochen. Es wurde nichts gesichert.");
+              else viaDownload();           // Teilen nicht erlaubt: normalen Download versuchen
+            });
+          return;
+        }
+      }
+      viaDownload();
+    }
+
+    // Innerhalb von Claude (Artefakt) sind normale Downloads gesperrt: dort gibt es eine eigene Download-Funktion.
+    if (window.claude && typeof window.claude.use === "function") {
+      window.claude.use("downloads").then(function (dl) {
+        if (!dl) { legacy(); return; }
+        dl.save({ filename: name, data: json }).then(
+          function () { markBackedUp(L("Gesichert als " + name + ".", "Backed up as " + name + ".")); },
+          function (err) {
+            if (err && err.code === "declined") msg.textContent = T("Abgebrochen. Es wurde nichts gesichert.");
+            else legacy();
+          });
+      }, legacy);
+      return;
+    }
+    legacy();
+  });
+
+  $("bkLoad").addEventListener("change", function (e) {
+    var f = e.target.files && e.target.files[0];
+    if (!f) return;
+    var rd = new FileReader();
+    rd.onload = function () { restoreText(String(rd.result || "")); e.target.value = ""; };
+    rd.onerror = function () { $("bkMsg").textContent = T("Die Datei konnte nicht gelesen werden."); };
+    rd.readAsText(f);
+  });
+
+  persistStatus(false);
+  bkStatus();
+
+  // ---- Sprache: feste Texte der Seite übersetzen, DE | EN unten
+  function trStatic() {
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n, list = [];
+    while ((n = w.nextNode())) list.push(n);
+    list.forEach(function (n) {
+      if (n.parentNode.closest && n.parentNode.closest("script,style")) return;
+      if (n._de === undefined) n._de = n.nodeValue;
+      var key = n._de.replace(/\s+/g, " ").trim();
+      if (!key) return;
+      var m = /^Version aktualisiert am (\S+) um (\S+) Uhr$/.exec(key);
+      if (m) { n.nodeValue = LANG === "en" ? "Version updated on " + m[1].replace(/\./g, "/") + " at " + m[2] : n._de; return; }
+      if (LANG === "en" && Object.prototype.hasOwnProperty.call(EN, key)) {
+        var lead = /^\s*/.exec(n._de)[0], trail = /\s*$/.exec(n._de)[0];
+        n.nodeValue = lead + EN[key] + trail;
+      } else if (n.nodeValue !== n._de && LANG === "de") n.nodeValue = n._de;
+    });
+    document.querySelectorAll("[placeholder],[aria-label]").forEach(function (el) {
+      ["placeholder", "aria-label"].forEach(function (at) {
+        if (!el.hasAttribute(at)) return;
+        var k = "_de_" + at; if (el[k] === undefined) el[k] = el.getAttribute(at);
+        el.setAttribute(at, LANG === "en" && Object.prototype.hasOwnProperty.call(EN, el[k]) ? EN[el[k]] : el[k]);
+      });
+    });
+    document.documentElement.lang = LANG;
+    $("langDe").className = LANG === "de" ? "on" : ""; $("langEn").className = LANG === "en" ? "on" : "";
+    $("langDe").setAttribute("aria-pressed", LANG === "de"); $("langEn").setAttribute("aria-pressed", LANG === "en");
+  }
+  function setLang(l) {
+    if (l === LANG) return;
+    LANG = l; try { localStorage.setItem("ebikeLadeplanerLang", l); } catch (e) {}
+    buildSelects(); trStatic(); renderProf(); renderOutdoor(); render(); updateChip(); persistStatus(false); $("bkMsg").textContent = ""; $("saveMsg").textContent = "";
+  }
+  $("langDe").addEventListener("click", function () { setLang("de"); });
+  $("langEn").addEventListener("click", function () { setLang("en"); });
+  trStatic();
+  setInterval(function () { if (document.visibilityState === "visible" && !$("resume").classList.contains("on")) render(); }, 60000);
+  setInterval(function () {
+    if (document.visibilityState !== "visible" || $("resume").classList.contains("on")) return;
+    var wantTxt = btnText();
+    if ($("btnOn").textContent !== wantTxt) render(); else if (runningPend()) tickTime();
+  }, 1000);
+  var resumeT = null;
+  function onResume() {
+    var o = $("resume"); o.classList.add("on");
+    clearTimeout(resumeT);
+    resumeT = setTimeout(function () { o.classList.remove("on"); render(); }, 1000);
+  }
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") onResume(); });
+  window.addEventListener("pageshow", function (e) { if (e.persisted) onResume(); });
+})();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  var hadCtl = !!navigator.serviceWorker.controller, reloaded = false;
+  // Kommt eine neue Version, lädt die Seite einmal von selbst neu
+  navigator.serviceWorker.addEventListener("controllerchange", function () { if (hadCtl && !reloaded) { reloaded = true; location.reload(); } });
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then(function (reg) {
+      reg.update();
+      document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") reg.update(); });
+    }).catch(function () {});
+  });
+}
+</script>
+</body>
+</html>
