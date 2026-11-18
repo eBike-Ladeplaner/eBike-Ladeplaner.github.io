@@ -28,6 +28,7 @@ Auf der Seite wählst du unter „Steckdose“ **Shelly** oder **Tasmota** und t
 - **Zwei Korrekturfaktoren:** Die Seite lernt getrennt für 0–80 % und 80–99 %. Der Faktor ab 80 % wird erst ab 3 Ladungen über 80 % genutzt. Lade ab und zu von 80 auf 99 %.
 - **Außentemperatur:** Die Seite trägt sie beim Öffnen von selbst ein (Internet und Standortfreigabe nötig). Du kannst sie überschreiben. Unter 0 °C und über 40 °C warnt die Seite (Bosch: Laden nur von 0 bis 40 °C).
 - **Verlauf:** Unter „Alle Ladungen anzeigen“ kannst du den Ladestand eines Eintrags mit „Ändern“ korrigieren oder ihn löschen. Aus Versehen gelöscht? Lies deine Sicherungsdatei mit „Aus Datei wiederherstellen“ neu ein.
+- **Verlauf:** Die Karte ist einklappbar und beim Öffnen der Seite zu. „Sicherung“ darunter bleibt immer sichtbar. Ganz unten steht ein Hinweis (Hobbyprojekt, ohne Gewähr, nicht von Bosch).
 - **Sicherung:** Den Verlauf und alle Profile mit ihren Einstellungen kannst du unter „Sicherung“ als Datei sichern und wiederherstellen.
 - **Sprache:** Ganz unten auf der Seite wählst du „DE | EN“. Beim ersten Öffnen richtet sich die Sprache nach dem Browser.
 - Solange die Uhr läuft und die Seite sichtbar ist, bleibt der Bildschirm an, wenn der Browser es erlaubt.
@@ -65,6 +66,7 @@ On the page, choose **Shelly** or **Tasmota** under "Steckdose" (socket) and ent
 - **Two correction factors:** The page learns separately for 0–80 % and 80–99 %. The factor above 80 % is only used from 3 charges above 80 %. Charge from 80 to 99 % now and then.
 - **Outdoor temperature:** The page fills it in by itself when opened (needs internet and location permission). You can overwrite it. Below 0 °C and above 40 °C the page warns (Bosch: charge only between 0 and 40 °C).
 - **History:** Under "Show all charges" you can correct the level of an entry with "Change" or delete it. Deleted by mistake? Read your backup file in again with "Restore from file".
+- **History:** The card is collapsible and closed when the page opens. "Sicherung" (backup) below stays always visible. A notice at the very bottom says: hobby project, no warranty, not from Bosch.
 - **Backup:** Under "Sicherung" (backup) you can back up and restore the history and all profiles with their settings as a file.
 - **Language:** At the very bottom of the page choose “DE | EN”. On first opening the language follows the browser.
 - While the clock runs and the page is visible, the screen stays on if the browser allows it.
