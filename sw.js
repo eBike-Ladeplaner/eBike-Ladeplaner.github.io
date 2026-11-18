@@ -1,7 +1,7 @@
 // Legt die Seite im Gerät ab, damit sie auch ohne Internet öffnet.
 // Mit Internet wird immer zuerst die neueste Version geholt, ohne Internet gilt die abgelegte.
 // Nach jeder Änderung an index.html den Namen unten hochzählen (v2, v3 ...).
-const CACHE = "ebike-ladeplaner-v80";
+const CACHE = "ebike-ladeplaner-v81";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.png"];
 
 self.addEventListener("install", (e) => {
