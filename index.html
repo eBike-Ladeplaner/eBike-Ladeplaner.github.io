@@ -509,7 +509,7 @@ details[open] > summary .st::before { content: "▼ "; }
   <p class="chip" id="chip"><span class="dot"></span><span id="chipT"></span></p>
   <p class="note" id="instLink" hidden style="text-align:center;margin:14px 0 0"><a href="#" id="instLinkA" style="color:inherit;text-decoration:underline;font-size:14px"></a></p>
   <p class="note" id="disc" style="text-align:center;margin:8px 0 0;font-size:12px">Privates Hobbyprojekt, ohne Gewähr. Lade den Akku nur unter Aufsicht, du schaltest auf eigene Verantwortung.</p>
-  <p class="note" id="buildStamp" style="text-align:center;margin:8px 0 0;font-size:12px">Version aktualisiert am 27.11.2026 um 16:52 Uhr</p>
+  <p class="note" id="buildStamp" style="text-align:center;margin:8px 0 0;font-size:12px">Version aktualisiert am 27.11.2026 um 17:05 Uhr</p>
   <div class="langsel" role="group" aria-label="Sprache / Language"><button type="button" id="langDe" aria-pressed="true">DE</button><span aria-hidden="true">|</span><button type="button" id="langEn" aria-pressed="false">EN</button></div>
 </main>
 
@@ -1313,6 +1313,7 @@ details[open] > summary .st::before { content: "▼ "; }
     var er = applyReached(e, v);
     if (er) return { err: er };
     if (setT) e.temp = tv;
+    e.mod = Date.now();   // Änderung merken, damit der Sichern-Hinweis wieder erscheint
     saveH(); persistStatus(false); render();
     return { ok: true };
   }
@@ -1608,13 +1609,15 @@ details[open] > summary .st::before { content: "▼ "; }
 
   function pad2(n) { return (n < 10 ? "0" : "") + n; }
   function bkStatus() {
-    var n = H.entries.filter(function (e) { return e.t > (H.lastBackup || 0); }).length;
+    var lb = H.lastBackup || 0;
+    var n = H.entries.filter(function (e) { return e.t > lb || (e.mod || 0) > lb; }).length;
+    var chg = H.entries.some(function (e) { return (e.mod || 0) > lb; });
     var bl = $("bkLast");
     bl.textContent = (H.lastBackup ? L("Zuletzt gesichert: ", "Last backup: ") + fmtDT(H.lastBackup) : L("Noch nie gesichert", "Never backed up")) +
       (n > 0 ? L(" · " + n + (n === 1 ? " Ladung offen" : " Ladungen offen"), " · " + n + (n === 1 ? " charge open" : " charges open")) : "");
     bl.className = n > 0 ? "msg" : "note";
     var top = $("bkTop");
-    if (n >= 3) {
+    if (n >= 3 || chg) {
       var sub = H.lastBackup ? L("seit der letzten Sicherung am " + fmtDT(H.lastBackup), "since the last backup on " + fmtDT(H.lastBackup)) : L("noch nie als Datei gesichert", "never backed up as a file");
       var cnt = L(n + (n === 1 ? " Ladung" : " Ladungen") + " nicht gesichert", n + (n === 1 ? " charge" : " charges") + " not backed up");
       top.hidden = false; $("bkTopTxt").textContent = cnt; $("bkTopSub").textContent = sub;
@@ -1738,11 +1741,11 @@ details[open] > summary .st::before { content: "▼ "; }
     $("langDe").setAttribute("aria-pressed", LANG === "de"); $("langEn").setAttribute("aria-pressed", LANG === "en");
   }
   // Info-Fenster nach einem Update: zeigt einmal, was neu ist (nicht beim allerersten Besuch, nicht während einer laufenden Ladung)
-  var NEWS_VER = "87";
+  var NEWS_VER = "88";
   var NEWS = {
     date: "2026-11-27",
-    de: ["Beim Ändern einer Ladung kannst du jetzt auch die Temperatur ändern oder nachtragen.", "Im Fenster zum Eintragen und Ändern öffnet sich die Tastatur beim Antippen des Feldes.", "Unter der Außentemperatur steht, dass die Wetterdaten von Open-Meteo.com kommen."],
-    en: ["When you change a charge, you can now also change or add the temperature.", "In the window for entering and changing, the keyboard opens when you tap the field.", "Under the outdoor temperature, the page now states that the weather data comes from Open-Meteo.com."]
+    de: ["Wenn du eine Ladung änderst (Ladestand oder Temperatur), erinnert dich die Seite wieder ans Sichern.", "Beim Ändern einer Ladung kannst du jetzt auch die Temperatur ändern oder nachtragen.", "Im Fenster zum Eintragen und Ändern öffnet sich die Tastatur beim Antippen des Feldes."],
+    en: ["When you change a charge (charge level or temperature), the page reminds you to back up again.", "When you change a charge, you can now also change or add the temperature.", "In the window for entering and changing, the keyboard opens when you tap the field."]
   };
   function renderNews() {
     var ul = $("newsList"); ul.textContent = "";
